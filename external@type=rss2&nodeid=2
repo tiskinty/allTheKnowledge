@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>Mirth Community - Forum</title>
+		<link>https://forums.mirthproject.io/</link>
+		<description />
+		<language>en</language>
+		<lastBuildDate>Wed, 27 Sep 2023 03:26:39 GMT</lastBuildDate>
+		<generator>vBulletin</generator>
+		<ttl>60</ttl>
+		<image>
+			<url>images/misc/rss.png</url>
+			<title>Mirth Community - Forum</title>
+			<link>https://forums.mirthproject.io/</link>
+		</image>
+		<item>
+			<title>Error launching Mirth</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183959-error-launching-mirth</link>
+			<pubDate>Tue, 26 Sep 2023 17:47:30 GMT</pubDate>
+			<description>I am using Mirth 4.1.1. 
+I have a site that we are trying to connect with that requires SSL cert. 
+I added the cert to C:\Program Files\Mirth...</description>
+			<content:encoded><![CDATA[I am using Mirth 4.1.1.<br />
+I have a site that we are trying to connect with that requires SSL cert.<br />
+I added the cert to C:\Program Files\Mirth Connect\appdata\keystore.jks.<br />
+However, when I run the Launcher I get the following Error:<br />
+Unable to retrieve payload from HTTP request. URI: <a href="https://localhost:8443/" target="_blank">https://localhost:8443</a>​<br />
+Here are the steps that took place:<ul><li>We created a CSR and sent to the site</li>
+<li>The site sent back .cer and .p7b</li>
+<li>We created a .pfx</li>
+<li>I imported the .pfx into the Mirth keystore.jks (I used portecle)</li>
+<li>Mirth will not launch with the Error</li>
+</ul>​]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>edsalvador</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183959-error-launching-mirth</guid>
+		</item>
+		<item>
+			<title>DocumentSerializer 101 error</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183952-documentserializer-101-error</link>
+			<pubDate>Tue, 26 Sep 2023 07:50:54 GMT</pubDate>
+			<description>Hello, 
+ 
+Occasionally, I encounter an error message: 
+ 
+ERROR (com.mirth.connect.model.converters.DocumentSerial izer:101): null 
+ 
+I tried...</description>
+			<content:encoded><![CDATA[Hello,<br />
+<br />
+Occasionally, I encounter an error message:<br />
+<br />
+ERROR (com.mirth.connect.model.converters.DocumentSerial izer:101): null<br />
+<br />
+I tried searching for a solution online but couldn't find any relevant information.<br />
+Does anyone have insights into the possible cause of this issue?<br />
+Thanks<br />
+ ]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>idoyohanan</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183952-documentserializer-101-error</guid>
+		</item>
+		<item>
+			<title>Data Quality and Transformation ~ eCQM</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183949-data-quality-and-transformation-~-ecqm</link>
+			<pubDate>Wed, 20 Sep 2023 17:58:40 GMT</pubDate>
+			<description>Can anyone share with me how we can use Mirth Connect for Data Transformation and Data Quality with regard to eCQM reporting and code standardization?</description>
+			<content:encoded>Can anyone share with me how we can use Mirth Connect for Data Transformation and Data Quality with regard to eCQM reporting and code standardization?</content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>sbettincourt</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183949-data-quality-and-transformation-~-ecqm</guid>
+		</item>
+		<item>
+			<title>stackoverflow error</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183947-stackoverflow-error</link>
+			<pubDate>Wed, 20 Sep 2023 13:49:20 GMT</pubDate>
+			<description>Mirth version - 4.1.1, 4.3, 4.4 
+ 
+Error loading tags: java.lang.StackOverflowError java.lang.StackOverflowError at...</description>
+			<content:encoded><![CDATA[Mirth version - 4.1.1, 4.3, 4.4<br />
+<br />
+Error loading tags: java.lang.StackOverflowError java.lang.StackOverflowError at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+has any one experienced this error ?<br />
+<br />
+This error comes from the above mentioned versions and it goes away after restart but then again pops up..<br />
+Error loading tags: java.lang.StackOverflowError<br />
+java.lang.StackOverflowError<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.removeInternal(Unknow n Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.removeInternal(Unknow n Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.removeInternal(Unknow n Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.removeInternal(Unknow n Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.removeInternal(Unknow n Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.removeInternal(Unknow n Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.removeInternal(Unknow n Source)<br />
+at java.desktop/java.awt.AWTEventMulticaster.remove(Unknown Source)<br />
+ ]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>Hk19911991</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183947-stackoverflow-error</guid>
+		</item>
+		<item>
+			<title>CSV to HL7 channeld s</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183946-csv-to-hl7-channeld-s</link>
+			<pubDate>Wed, 20 Sep 2023 11:45:12 GMT</pubDate>
+			<description>I am trying to set a CSV to HL7 channel, But I keep getting the same last record of the CSV file to send as a HL7, What am I doing wrong? 
+ 
+Thanks</description>
+			<content:encoded><![CDATA[I am trying to set a CSV to HL7 channel, But I keep getting the same last record of the CSV file to send as a HL7, What am I doing wrong?<br />
+<br />
+Thanks]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>jpino</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183946-csv-to-hl7-channeld-s</guid>
+		</item>
+		<item>
+			<title>hl7Msg to QBP</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/development/183944-hl7msg-to-qbp</link>
+			<pubDate>Sun, 17 Sep 2023 14:37:55 GMT</pubDate>
+			<description />
+			<content:encoded />
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/development">Development</category>
+			<dc:creator>Mahmoudmos</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/development/183944-hl7msg-to-qbp</guid>
+		</item>
+		<item>
+			<title>hl7Msg to QBP</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183943-hl7msg-to-qbp</link>
+			<pubDate>Sun, 17 Sep 2023 14:37:55 GMT</pubDate>
+			<description>hello all 
+I am trying to build a channel that can read ADT/ORM message strip out the information from PID segment and build QBP^Q23 to be sent to...</description>
+			<content:encoded><![CDATA[hello all<br />
+I am trying to build a channel that can read ADT/ORM message strip out the information from PID segment and build QBP^Q23 to be sent to EMPI and receive MPI response<br />
+then later stage is to get the information back in RSP^K23 and inject into the original hl7 message<br />
+<br />
+sample message<br />
+<br />
+MSH|^~\&amp;|NIST_SENDER^^|NIST^^|NIST_RECEIVER^^|NIST ^^|20101101161134||ADT^A04^ADT_A01|NIST-101101161134113|P|2.3.1<br />
+EVN||20101020<br />
+PID|||PIX10501^^^NIST2010&amp;2.16.840.1.113883.3.72.5 .9.1&amp;ISO||ALPHA^ALAN^^^^^L|HOUSE^^^^^^L|19690908|M |||338 Apple Lane^^LITTLETON^IL^61452||^PRN^PH^^^309^2576057||| |||357-56-4113<br />
+PV1||O​<br />
+<br />
+then it should export like<br />
+<br />
+MSH|^~\&amp;|NIST_SENDER^^|NIST^^|NIST_RECEIVER^^|NIST ^^|20101101161157||QBP^Q23^QBP_Q21|NIST-101101161157166|P|2.5<br />
+QPD|IHE PIX Query|QRY1248968460880|PIX10501^^^NIST2010&amp;2.16.84 0.1.113883.3.72.5.9.1&amp;ISO|^^^NIST2010-2&amp;2.16.840.1.113883.3.72.5.9.2&amp;ISO<br />
+RCP|I<br />
+<br />
+any sample channel would be helpful since its been a long time that i used mirth and i seem to be struggling doing this simple task  ​]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>Mahmoudmos</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183943-hl7msg-to-qbp</guid>
+		</item>
+		<item>
+			<title>IN1 segments and check IN1.13.1 to see if the date is less than todays date.</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183934-in1-segments-and-check-in1-13-1-to-see-if-the-date-is-less-than-todays-date</link>
+			<pubDate>Thu, 14 Sep 2023 19:30:55 GMT</pubDate>
+			<description>I need to loop thru IN1 segments and check IN1.13.1 to see if the date is less than todays date. If it is , filter the message. Part of my problem is...</description>
+			<content:encoded><![CDATA[I need to loop thru IN1 segments and check IN1.13.1 to see if the date is less than todays date. If it is , filter the message. Part of my problem is that I have three other filters using rule builder and I am trying to add in a JavaScript step.<br />
+<br />
+<br />
+ ]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>rsimstn</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183934-in1-segments-and-check-in1-13-1-to-see-if-the-date-is-less-than-todays-date</guid>
+		</item>
+		<item>
+			<title>Preprocessor Question</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183933-preprocessor-question</link>
+			<pubDate>Thu, 14 Sep 2023 16:07:05 GMT</pubDate>
+			<description>If the preprocessor is left blank on a given channel, will that cause Mirth to deliver empty messages?</description>
+			<content:encoded>If the preprocessor is left blank on a given channel, will that cause Mirth to deliver empty messages?</content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>de2425</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183933-preprocessor-question</guid>
+		</item>
+		<item>
+			<title>Sending byte / hexadecimal data via Mirth Connect</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183932-sending-byte-hexadecimal-data-via-mirth-connect</link>
+			<pubDate>Wed, 13 Sep 2023 18:42:43 GMT</pubDate>
+			<description>Hi all, 
+ 
+Does anyone know if it is possible to send byte / hexadecimal data via Mirth?  e.g. to send {C1}{02}{10} 
+ 
+I need to send this code to a...</description>
+			<content:encoded><![CDATA[Hi all,<br />
+<br />
+Does anyone know if it is possible to send byte / hexadecimal data via Mirth?  e.g. to send {C1}{02}{10}<br />
+<br />
+I need to send this code to a patient monitor in order to get it to send back data.<br />
+<br />
+Thanks!]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>bcoken</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183932-sending-byte-hexadecimal-data-via-mirth-connect</guid>
+		</item>
+		<item>
+			<title>Mirth on idle - high RAM consumption</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183926-mirth-on-idle-high-ram-consumption</link>
+			<pubDate>Tue, 12 Sep 2023 10:23:18 GMT</pubDate>
+			<description>I have Mirth 4.1.1 running on a Windows VM. I noticed that the usage of RAM is very high on idle. I have 41 channels that are triggered every Sunday,...</description>
+			<content:encoded><![CDATA[I have Mirth 4.1.1 running on a Windows VM. I noticed that the usage of RAM is very high on idle. I have 41 channels that are triggered every Sunday, so nothing should be running at the moment. Is this due to Java heap size or something else?  Java heap size iz set to -Xmx4096m. The number of MB used stays pretty much the same for the mcservice process.<br />
+<a href="filedata/fetch?id=183927&amp;d=1694513137&amp;type=thumb" title="Name:  image.png
+Views: 13
+Size:  39.4 KB" >image.png</a>​]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>Lepi</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183926-mirth-on-idle-high-ram-consumption</guid>
+		</item>
+		<item>
+			<title>raw Byte using Mirth Connect TCP</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183919-raw-byte-using-mirth-connect-tcp</link>
+			<pubDate>Mon, 11 Sep 2023 16:26:14 GMT</pubDate>
+			<description>Hi all, 
+ 
+I am trying to get Mirth Connect to receive and process data that is coming in in byte / hexadecimal form via a TCP stream. 
+ 
+I can see...</description>
+			<content:encoded><![CDATA[Hi all,<br />
+<br />
+I am trying to get Mirth Connect to receive and process data that is coming in in byte / hexadecimal form via a TCP stream.<br />
+<br />
+I can see the channel is 'connected' to the monitor streaming this information, however no messages are being received in Mirth. Using a network analyser, such as WireShark, I can see that data is incoming.<br />
+<br />
+<br />
+​<br />
+<br />
+Do I need some sort of special setup with Mirth to make this data appear in messages?<br />
+<br />
+Thanks in advance!]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>bcoken</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183919-raw-byte-using-mirth-connect-tcp</guid>
+		</item>
+		<item>
+			<title>Question about license type</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183908-question-about-license-type</link>
+			<pubDate>Fri, 08 Sep 2023 05:46:00 GMT</pubDate>
+			<description>I see in github the latest version is 4.4.0, will Mirth keep maintaining, patching this version for future bug fixes, security volnurability issues?...</description>
+			<content:encoded><![CDATA[I see in github the latest version is 4.4.0, will Mirth keep maintaining, patching this version for future bug fixes, security volnurability issues?<br />
+What is the lifecycle of a version? Does Mirth have kind of LTS version which will be supported for a long term?]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>InFerNaL_LioN</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183908-question-about-license-type</guid>
+		</item>
+		<item>
+			<title>Mirth server scaling (vertical vs. horizontal)</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183907-mirth-server-scaling-vertical-vs-horizontal</link>
+			<pubDate>Fri, 08 Sep 2023 02:23:26 GMT</pubDate>
+			<description>Hi everyone - Mirth Connect 3.8.0.  Is it generally a better idea to scale an existing Mirth server vertically (add more CPU, memory, disk space,...</description>
+			<content:encoded>Hi everyone - Mirth Connect 3.8.0.  Is it generally a better idea to scale an existing Mirth server vertically (add more CPU, memory, disk space, etc.)?  Or horizontally (create new instances of Mirth)?  The existing server is reaching ~300 channels, with no obvious signs of slowness or other issues.  Looking to double that number of channels in the next couple of years.</content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>elaurocks</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183907-mirth-server-scaling-vertical-vs-horizontal</guid>
+		</item>
+		<item>
+			<title>Javascript Reader indentify end of Java list completed by Destination connector?</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/support/183906-javascript-reader-indentify-end-of-java-list-completed-by-destination-connector</link>
+			<pubDate>Fri, 08 Sep 2023 00:09:52 GMT</pubDate>
+			<description><![CDATA[I am unsure how to achive this or if it's possible currently. 
+ 
+I have a JavaScript reader source that creates and returns a Java List.  
+- Then I...]]></description>
+			<content:encoded><![CDATA[I am unsure how to achive this or if it's possible currently.<br />
+<br />
+I have a JavaScript reader source that creates and returns a Java List. <br />
+- Then I have Destination connectors which process the Java list as individual messages. <br />
+<br />
+Is there a way I can tell/flag when the Destination connector has processed the last of that Java List?<br />
+<br />
+Reason being I'm looking to kick off another channel after all the messages within that Java list have completed processing. <br />
+-Currently Since the Java list gets broken down into individual messages by Mirth for the destination connectors, any post process, transformer,response happens with each message and not after the last message of the java list has processed. ]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/support">Support</category>
+			<dc:creator>ezence01</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/support/183906-javascript-reader-indentify-end-of-java-list-completed-by-destination-connector</guid>
+		</item>
+	</channel>
+</rss>

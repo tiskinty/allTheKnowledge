@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>Mirth Community - Development</title>
+		<link>https://forums.mirthproject.io/</link>
+		<description />
+		<language>en</language>
+		<lastBuildDate>Wed, 27 Sep 2023 03:26:48 GMT</lastBuildDate>
+		<generator>vBulletin</generator>
+		<ttl>60</ttl>
+		<image>
+			<url>images/misc/rss.png</url>
+			<title>Mirth Community - Development</title>
+			<link>https://forums.mirthproject.io/</link>
+		</image>
+		<item>
+			<title>hl7Msg to QBP</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/development/183944-hl7msg-to-qbp</link>
+			<pubDate>Sun, 17 Sep 2023 14:37:55 GMT</pubDate>
+			<description />
+			<content:encoded />
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/development">Development</category>
+			<dc:creator>Mahmoudmos</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/development/183944-hl7msg-to-qbp</guid>
+		</item>
+	</channel>
+</rss>

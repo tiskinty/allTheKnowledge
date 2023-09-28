@@ -1,0 +1,3449 @@
+<!DOCTYPE html>
+<html id="htmlTag" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+	
+	
+	<base href="" />
+	
+		<link rel="Shortcut Icon" href="../favicon.ico" type="image/x-icon" />
+	
+
+	
+	
+	
+		
+		
+	
+
+	
+
+	
+	
+
+
+<!-- 
+base url: https://forums.mirthproject.io
+fontsDir: https://forums.mirthproject.io/fonts/fontawesome/webfonts
+cssDir: https://forums.mirthproject.io/fonts/fontawesome/css
+-->
+
+<link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="../fonts/fontawesome/css/brands.css" rel="stylesheet">
+<link href="../fonts/fontawesome/css/solid.css" rel="stylesheet">
+<link href="../fonts/fontawesome/css/regular.css" rel="stylesheet">
+
+	
+	<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_reset.css,css_unreset.css,css_utilities.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="https://forums.mirthproject.io/css.php?styleid=8&amp;td=ltr&amp;sheet=css_imgareaselect-animated.css,css_jquery-ui-1_12_1_custom.css,css_jquery_qtip.css,css_jquery_selectBox.css,css_jquery_autogrow.css,css_global.css,css_fonts.css,css_b_link.css,css_b_layout.css,css_b_grid.css,css_b_button.css,css_b_button_group.css,css_b_icon.css,css_b_icon_fa.css,css_b_tabbed_pane.css,css_b_form_control.css,css_b_form_input.css,css_b_form_select.css,css_b_form_textarea.css,css_b_media.css,css_b_divider.css,css_b_avatar.css,css_b_namecard.css,css_b_ajax_loading_indicator.css,css_responsive.css,css_b_vbscroller.css,css_b_theme_selector.css,css_b_top_background.css,css_b_module.css,css_b_comp_menu_horizontal.css,css_b_comp_menu_dropdown.css,css_b_comp_menu_vert.css,css_b_top_menu.css&amp;ts=1694457151" />
+
+<script type="text/javascript" src="../js/header-rollup-600.js"></script>
+
+	
+	
+		<meta property="og:site_name" content="Mirth Community" />
+		<meta property="og:description" content="Attachments are a way to optimize how Connect handles large messages. Using Attachments reduces the amount of data being stored in the database." />
+		<meta property="og:url" content="https://forums.mirthproject.io/articles/175046-using-attachments" />
+		
+		<meta property="og:type" content="website" />
+	
+	
+
+	
+	
+	<link rel="canonical" href="175046-using-attachments@p=180640.html" />
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+	
+	
+	
+		
+
+	<title>
+		
+			Using Attachments - 
+		
+		Mirth Community
+	</title>
+
+	<meta name="description" content="Attachments are a way to optimize how Connect handles large messages. Using Attachments reduces the amount of data being stored in the database." />
+	<meta name="generator" content="vBulletin 6.0.0" />
+
+	
+	
+
+	<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_login.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_blogs_groups.css,css_b_sidebar_field.css,css_b_flexgrid.css,css_b_groupgrid.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_reactions.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="https://forums.mirthproject.io/css.php?styleid=8&amp;td=ltr&amp;sheet=css_b_post.css,css_b_post_control.css,css_b_post_attachments.css,css_b_post_notice.css,css_b_post_sm.css,css_b_comments.css,css_b_comment.css,css_b_comment_entry.css,css_b_userinfo.css,css_b_meter.css,css_b_bbcode.css,css_b_bbcode_user.css,css_b_event.css,css_b_link_thumbnail_list.css,css_b_thumbnail_nav.css&amp;ts=1694457151" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_b_sharing_menu.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_b_post_column.css,css_b_channel_nav.css,css_b_article_content_pagenav.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_b_modal_banner.css&amp;ts=1694457151.css" />
+<link class="js-additional-css" rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_additional.css&amp;ts=1694457151.css" />
+
+<script type="text/javascript">
+		if (location.hash) {
+			document.write('<style type="text/css"> a.anchor { display:none;} <\/style>');
+		}
+
+		var uploadUrlTarget = "https://forums.mirthproject.io/uploader/url";
+		var pageData = {
+			"baseurl": "https://forums.mirthproject.io",
+			"baseurl_path": "/",
+			"baseurl_core": "https://forums.mirthproject.io/core",
+			"baseurl_pmchat": "https://forums.mirthproject.io/pmchat/chat",
+			"pageid": "29",
+			"pagetemplateid": "36",
+			"channelid": "13",
+			"nodeid": "175046",
+			"userid": "0",
+			"username": "Guest",
+			"musername": "Guest",
+			"user_startofweek": "1",
+			
+			"user_lang_pickerdateformatoverride": "",
+			"user_editorstate": "",
+			"textDirLeft": "left",
+			"textDirRight": "right",
+			"textdirection": "ltr",
+			"can_use_sitebuilder": "",
+			"cookie_prefix": "vb5014",
+			"cookie_path": "/",
+			"cookie_domain": "",
+			"inlinemod_cookie_name": "inlinemod_nodes",
+			
+				"pagenum": "1",
+			
+			"languageid": "1",
+			"threadmarking": "2",
+			"lastvisit": "1695785197",
+			"phrasedate": "1694457151",
+			"optionsdate": "1694457201",
+			
+			"current_server_datetime": "1695785233",
+			"simpleversion": "v=600",
+			
+			"showhv_post": "1",
+			"crontask": "runCron",
+			"securitytoken": "guest",
+			"privacystatus": "1",
+			"flash_message": "",
+			"registerurl": "https://forums.mirthproject.io/register",
+			"activationurl": "https://forums.mirthproject.io/activateuser",
+			"helpurl": "https://forums.mirthproject.io/help",
+			"contacturl": "https://forums.mirthproject.io/contact-us",
+			"datenow": "09-26-2023"
+		};
+		
+		
+
+	</script>
+	
+	
+<link rel="alternate" title="Mirth Community" type="application/rss+xml" href="../external@type=rss2" />
+<link rel="alternate" title="Mirth Community -- Articles" type="application/rss+xml" href="../external@type=rss2&amp;nodeid=13" />
+</head>
+
+	
+
+
+
+
+
+
+
+	
+
+<body id="vb-page-body" class="l-desktop page29 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage" data-usergroupid="1" data-styleid="8">
+<script type="text/javascript">
+	vBulletin.Responsive.Debounce.checkBrowserSize();
+</script>
+
+
+
+
+	
+
+
+<div class="b-top-menu__background b-top-menu__background--sitebuilder js-top-menu-sitebuilder h-hide-on-small h-hide">
+	<div class="b-top-menu__container">
+		<ul class="b-top-menu b-top-menu--sitebuilder js-top-menu-sitebuilder--list js-shrink-event-parent">
+			
+		</ul>
+	</div>
+</div>
+
+<nav class="b-top-menu__background js-top-menu-user">
+	<div class="b-top-menu__container">
+		<ul class="b-top-menu b-top-menu--user js-top-menu-user--list js-shrink-event-parent">
+			
+
+
+
+
+	
+
+
+
+	<li class="b-top-menu__item b-top-menu__item--no-left-divider b-top-menu__item--no-right-divider username-container js-shrink-event-child">
+
+		<div class="b-comp-menu-dropdown b-comp-menu-dropdown--headerbar js-comp-menu-dropdown b-comp-menu-dropdown--open-on-hover js-login-menu">
+			<div id="lnkLoginSignupMenu" class="b-comp-menu-dropdown__trigger js-comp-menu-dropdown__trigger b-comp-menu-dropdown__trigger--arrow b-comp-menu-dropdown__trigger--headerbar js-button" tabindex="0">
+				Login or Sign Up
+			</div>
+
+			<ul class="b-comp-menu-dropdown__content js-comp-menu-dropdown__content b-comp-menu-dropdown__content--right">
+
+				<li class="b-comp-menu-dropdown__content-item js-comp-menu-dropdown__content-maintain-menu b-comp-menu-dropdown__content-item--no-hover">
+					
+
+<div class='js-login-form-main-container login-form-main-container'>
+
+<div class="js-error-box error h-margin-bottom-l h-hide"></div>
+
+<div class="js-login-message-box login-message-box h-hide">
+	<div class="h-center-container"><div class="h-center">Logging in...</div></div>
+</div>
+
+<form action="../index.html" method="post" class="h-clearfix js-login-form-main ">
+	<div class="login-fieldset table">
+		<div class="tr">
+			
+				
+			
+			<span class="td">
+				<input type="text" name="username" value="" class="js-login-username b-form-input__input b-form-input__input--full" placeholder="User Name" />
+			</span>
+		</div>
+		<div class="tr">
+			<span class="td">
+				<input type="password" autocomplete="off" name="password" class="js-login-password b-form-input__input b-form-input__input--full" placeholder="Password" />
+			</span>
+		</div>
+	</div>
+
+	
+	
+		<div class="h-warning h-text-size--11">By logging into your account, you agree to our <a href="https://www.nextgen.com/legal-notice" target="_blank">Privacy Policy</a>, personal data processing and storage practices as described therein.</div>
+		<input type="hidden" name="privacyconsent" value="1" />
+	
+
+	<div class="secondary-controls h-left h-clear-left h-margin-top-s">
+		<label><input type="checkbox" name="rememberme"  />Remember me</label>
+	</div>
+
+	<div class="primary-controls h-right h-clear-right h-margin-top-s">
+		<button type="button" class="js-login-button b-button b-button--primary">Log in</button>
+	</div>
+
+	<div class="secondary-controls h-left h-clear-left">
+		<a href="../lostpw.html" class='b-link lost-password-link'>Forgot password or user name?</a>
+	</div>
+
+	<div class="primary-controls h-right h-clear-right">
+		
+			
+			
+			
+		
+		or <a id="idLoginSignup" href="../register@urlpath=aHR0cHM6Ly9mb3J1bXMubWlydGhwcm9qZWN0LmlvLy9hcnRpY2xlcy8xNzUwNDYtdXNpbmctYXR0YWNobWVudHM=.html">Sign Up</a>
+	</div>
+
+</form>
+</div>
+				</li>
+
+				
+				
+
+				<li id="externalLoginProviders" class="b-comp-menu-dropdown__content-item js-comp-menu-dropdown__content-maintain-menu b-comp-menu-dropdown__content-item--no-hover js-external-login-providers h-clearfix h-hide-imp">
+					<span class="h-left h-margin-left-s login-external-label">Log in with</span>
+					
+					
+					
+		
+
+			
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</li>
+
+	
+
+		</ul>
+	</div>
+</nav>
+
+<div id="sitebuilder-wrapper" class="noselect h-clearfix h-hide-on-small">
+	
+</div>
+
+<div class="main-navbar-bottom-line"></div>
+
+<div id="outer-wrapper">
+<div id="wrapper">
+
+	
+	<div id="header-axd" class="header-edit-box axdnum_1 h-clearfix">
+		
+		<div class="axd-container axd-container_header">
+			<div class="admin-only">
+				
+			</div>
+			<div class="axd axd_header">
+				
+			</div>
+		</div>
+		<div class="axd-container axd-container_header2">
+			<div class="admin-only">
+				
+			</div>
+			<div class="axd axd_header2">
+				
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+	
+	<header class="b-top-background__header-mainnav-subnav">
+
+		
+		<div class="b-top-background__header-mainnav">
+
+			
+			<div id="header" class="noselect">
+				<div class="header-cell header-edit-box">
+					
+					<div class="site-logo">
+						<a href="../index.html"><img src="../filedata/fetch@filedataid=3830" data-orig-src="filedata/fetch?filedataid=3830" alt="Logo" title="Powered by vBulletin" /></a>
+					</div>
+				</div>
+				<div class="toolbar">
+					<ul class="h-right">
+						
+						
+						
+						<li class="search-container">
+							<form id="searchForm" action="https://forums.mirthproject.io/search" class="h-left" method="GET">
+								<div class="h-left">
+
+									
+									<div class="search-box h-clearfix">
+
+										<div class="search-term-container">
+
+											<input type="text" name="q" id="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow" autocomplete="off" />
+
+											<div class="search-menu-container h-clearfix">
+												<div class="vertical-divider-left"></div>
+												<div class="b-comp-menu-dropdown js-comp-menu-dropdown b-comp-menu-dropdown--open-on-hover b-comp-menu-dropdown--header-search">
+													<div class="b-comp-menu-dropdown__trigger js-comp-menu-dropdown__trigger b-comp-menu-dropdown__trigger--arrow js-button" tabindex="0"></div>
+													<ul class="b-comp-menu-dropdown__content js-comp-menu-dropdown__content">
+
+	<li class="b-comp-menu-dropdown__content-item b-comp-menu-dropdown__content-item--first b-comp-menu-dropdown__content-item--no-hover js-comp-menu-dropdown__content-maintain-menu">
+
+		<div class="searchPopupBody">
+
+			<label><input type="checkbox" name="searchFields[title_only]" class="searchFields_title_only" value="1" />Search in titles only</label>
+
+			
+
+			
+				
+				
+					<label><input type="checkbox" name="searchFields[channel][]" class="searchFields_channel" value="13" />Search in Articles only</label>
+				
+			
+
+			<div class="b-button-group h-margin-top-xs">
+				<button type="submit" id="btnSearch-popup" class="b-button b-button--primary">Search</button>
+			</div>
+
+		</div>
+
+		<input type="hidden" name="searchJSON" value="" />
+	</li>
+
+	<li class="b-comp-menu-dropdown__content-item js-comp-menu-dropdown__content-maintain-menu">
+		<a href="../index.html#" id="btnAdvSearch" class="adv-search-btn">Advanced Search</a>
+	</li>
+
+</ul>
+												</div>
+											</div>
+
+										</div>
+
+										<button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button>
+
+									</div>
+
+								</div>
+							</form>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+
+			
+			<nav id="channel-tabbar" class="h-clearfix noselect">
+				<ul class="channel-tabbar-list h-left b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-small b-comp-menu-dropdown--inactive js-comp-menu-dropdown__content--main-menu h-hide-on-small js-shrink-event-parent">
+
+					
+						
+					
+
+					
+					
+					
+						
+						
+						
+						<li class=" section-item js-shrink-event-child">
+							<a   href="../index.html" class="h-left navbar_home">Forums</a>
+							
+								<span class="channel-tabbar-divider"></span>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+						
+						
+						
+						<li class=" section-item js-shrink-event-child">
+							<a   href="../blogs.html" class="h-left navbar_blogs">Blogs</a>
+							
+								<span class="channel-tabbar-divider"></span>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+						
+						
+						
+						<li class="current section-item js-shrink-event-child">
+							<a   href="../articles.html" class="h-left navbar_articles">Articles</a>
+							
+								<span class="channel-tabbar-divider"></span>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+						
+						
+						
+						<li class=" section-item js-shrink-event-child">
+							<a   href="../social-groups.html" class="h-left navbar_social_groups">Groups</a>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+					
+				</ul>
+			</nav>
+
+
+		</div>
+
+
+		
+		<nav id="channel-subtabbar" class="h-clearfix h-hide h-hide-on-small h-block js-channel-subtabbar">
+			<ul class="h-left channel-subtabbar-list js-channel-subtabbar-list js-shrink-event-parent">
+				
+			</ul>
+		</nav>
+
+
+	</header>
+
+
+	
+		
+	
+
+	
+	
+		
+		<nav class="breadcrumbs-wrapper">
+		<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+			<li class="crumb">
+				<a class="crumb-link h-flex-valign-center" href="../index.html">
+					<span class="b-icon b-icon__home" title="Home"></span>
+				</a>
+			</li>
+			
+				
+					
+					
+				
+				<li class="crumb">
+					<span class="b-icon b-icon__chevron-right--gray separator"></span>
+					
+						<a class="crumb-link" href="../articles.html">Articles</a>
+					
+				</li>
+			
+		</ul>
+		</nav>
+	
+
+	
+
+	
+	
+		
+			
+			
+				
+				
+				
+			
+		
+			
+			
+				
+				
+				
+			
+		
+	
+
+	
+
+	
+
+<ul id="notices" class="notices">
+	
+	
+		
+		<li class="notice restore" data-notice-id="2" data-notice-persistent="1">Hi everyone, <span style="color: red; font-weight: bold">please check out our new discussion forum located in our GitHub site</span>: <b><a href="https://github.com/nextgenhealthcare/connect/discussions">https://github.com/nextgenhealthcare/connect/discussions</a></b>. Let us know your feedback as we try out this new part of GitHub! Don't worry, the content in these forums won't be going away and will at a minimum be preserved for historical reference.</li>
+	
+</ul>
+
+
+	
+
+
+	
+	<main id="content">
+		<div class="canvas-layout-container js-canvas-layout-container">
+
+<div id="canvas-layout-wide-narrow" class="canvas-layout" data-layout-id="2">
+
+	
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 200 -->
+
+
+
+<div class="canvas-widget-list section-200 js-sectiontype-global_after_breadcrumb h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 2 -->
+
+
+
+<div class="canvas-widget-list section-2 js-sectiontype-notice h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+	<!-- *** START WIDGET widgetid:37, widgetinstanceid:143, template:widget_announcement *** -->
+	
+	
+
+
+	
+	
+
+
+
+
+
+<div class="b-module canvas-widget default-widget announcement-widget empty" id="widget_143" data-widget-id="37" data-widget-instance-id="143">
+	
+	<div class="widget-header h-clearfix">
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Announcement</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+
+	<div class="widget-content">
+		
+			
+				No announcement yet.
+				
+			
+				
+	</div>
+</div>
+	<!-- *** END WIDGET widgetid:37, widgetinstanceid:143, template:widget_announcement *** -->
+
+	<!-- *** START WIDGET widgetid:57, widgetinstanceid:144, template:widget_pagetitle *** -->
+	
+	
+
+
+	
+	
+
+
+
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border" id="widget_144" data-widget-id="57" data-widget-instance-id="144">
+	
+	<div class="widget-header h-clearfix">
+		
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Using Attachments</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+
+
+	
+	
+
+		
+		
+		
+
+		
+
+		<div class="b-post__article-meta-wrapper js-update-article-title-info hide-on-editmode">
+
+			
+			
+
+	<ul class="b-post__article-meta h-margin-bottom-l">
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+
+				
+				
+				
+					
+					
+					
+						
+						
+					
+				
+
+				
+				
+					Created by: <img class="avatar" src="../core/images/default/default_avatar_large.png" alt="" /> <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+
+			</li>
+		
+
+		
+		
+			
+			
+			
+			
+			
+				<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+					Published: 07-28-2020, 12:32 PM
+				</li>
+			
+		
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+				
+					5374 views
+				
+			</li>
+		
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+				
+				
+					2 comments
+				
+			</li>
+		
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--sharing-menu-container b-post__article-meta-item--inline">
+				
+
+
+
+
+
+
+
+
+
+	
+
+
+<ul class="b-sharing-menu js-sharing-menu js-comp-menu-horizontal js-comp-menu--dropdown-on-small b-sharing-menu--horizontal b-post__hide-when-deleted" data-dropdown-trigger-phrase="share" data-dropdown-icon-classes="b-icon b-icon__share" data-dropdown-content-classes="b-sharing-menu--dropdown" data-dropdown-menu-classes="b-sharing-menu--inline-on-small">
+
+	
+		<li class="b-sharing-menu__item">
+			
+			<a class="js-fb-share-dialog b-sharing-menu__item-link b-sharing-menu__item-link--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fforums.mirthproject.io%2Farticles%2F175046-using-attachments%23post175046" data-url-not-encoded="https://forums.mirthproject.io/articles/175046-using-attachments#post175046" target="_blank">
+				<svg class="b-sharing-menu__item-link-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" color="#ffffff">
+					<path fill="#ffffff" fill-rule="evenodd" d="M8 14H3.667C2.733 13.9 2 13.167 2 12.233V3.667A1.65 1.65 0 0 1 3.667 2h8.666A1.65 1.65 0 0 1 14 3.667v8.566c0 .934-.733 1.667-1.667 1.767H10v-3.967h1.3l.7-2.066h-2V6.933c0-.466.167-.9.867-.9H12v-1.8c.033 0-.933-.266-1.533-.266-1.267 0-2.434.7-2.467 2.133v1.867H6v2.066h2V14z"></path>
+				</svg>
+				Share
+			</a>
+		</li>
+	
+
+	
+		<li class="b-sharing-menu__item b-sharing-menu__item--twitter">
+			
+			
+			<a class="js-twitter-share b-sharing-menu__item-link b-sharing-menu__item-link--twitter" href="https://twitter.com/intent/tweet?text=Using+Attachments&amp;url=https%3A%2F%2Fforums.mirthproject.io%2Farticles%2F175046-using-attachments%23post175046" target="_blank">
+				<img class="b-sharing-menu__item-link-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2072%2072%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h72v72H0z%22%2F%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23fff%22%20d%3D%22M68.812%2015.14c-2.348%201.04-4.87%201.744-7.52%202.06%202.704-1.62%204.78-4.186%205.757-7.243-2.53%201.5-5.33%202.592-8.314%203.176C56.35%2010.59%2052.948%209%2049.182%209c-7.23%200-13.092%205.86-13.092%2013.093%200%201.026.118%202.02.338%202.98C25.543%2024.527%2015.9%2019.318%209.44%2011.396c-1.125%201.936-1.77%204.184-1.77%206.58%200%204.543%202.312%208.552%205.824%2010.9-2.146-.07-4.165-.658-5.93-1.64-.002.056-.002.11-.002.163%200%206.345%204.513%2011.638%2010.504%2012.84-1.1.298-2.256.457-3.45.457-.845%200-1.666-.078-2.464-.23%201.667%205.2%206.5%208.985%2012.23%209.09-4.482%203.51-10.13%205.605-16.26%205.605-1.055%200-2.096-.06-3.122-.184%205.794%203.717%2012.676%205.882%2020.067%205.882%2024.083%200%2037.25-19.95%2037.25-37.25%200-.565-.013-1.133-.038-1.693%202.558-1.847%204.778-4.15%206.532-6.774z%22%2F%3E%3C%2Fsvg%3E" />
+				Tweet
+			</a>
+		</li>
+	
+
+	
+
+</ul>
+			</li>
+		
+
+	</ul>
+
+		</div>
+	
+
+</div>
+	<!-- *** END WIDGET widgetid:57, widgetinstanceid:144, template:widget_pagetitle *** -->
+
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row has-columns l-row__fixed--right">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+		
+		
+			
+		
+	
+
+
+
+	
+		
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+<!-- section 0 -->
+
+
+
+<div class="canvas-widget-list section-0 js-sectiontype-primary h-clearfix l-col__flex-6 l-col__small--full l-col--flex-first has-adjacent-right-col l-wide-column">
+
+	
+		<div class="l-col__flex-content">
+	
+
+	
+	<!-- *** START WIDGET widgetid:64, widgetinstanceid:145, template:widget_articledisplay *** -->
+	
+
+
+
+
+
+	
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+
+	
+	
+
+	
+
+		
+		
+
+		
+
+			
+			
+
+			
+			
+
+			
+			
+
+			
+				
+			
+
+			
+
+			
+
+			
+			
+				
+			
+
+			
+			
+			
+			
+			
+			
+
+			
+
+			
+			
+			
+
+			
+			
+			
+
+			
+			
+
+			
+			
+				
+					
+					
+					
+				
+				
+			
+				
+					
+					
+					
+				
+				
+			
+				
+					
+					
+					
+				
+				
+			
+
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+
+			
+			
+			
+			
+			
+			
+
+		
+	
+
+	
+	
+
+	
+	
+		
+	
+
+	<div class="b-module canvas-widget default-widget conversation-content-widget blog-conversation-content-widget widget-no-border widget-no-header-buttons  axd-container" id="widget_145" data-widget-id="64" data-widget-instance-id="145" data-widget-default-tab="">
+		
+			<div class="conversation-status-messages">
+				
+				
+				
+				<div class="conversation-status-message notice h-hide"><span></span><div class="close">X</div></div>
+			</div>
+
+			<div class="widget-header h-clearfix">
+				<div class="module-title h-left main-header-title">
+					
+				</div>
+				<div class="module-buttons">
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				</div>
+				
+				
+				<div class="conversation-controls h-right h-clear hide-on-editmode b-button-group h-margin-bottom-l js-movable-toolbar-button-container">
+					
+				</div>
+			</div>
+			<div class="widget-content tab widget-tabs-panel">
+				<input type="hidden" name="canmoderate" id="canmoderate" value="0" />
+
+				<div id="stream-view-tab" class="conversation-view conversation-stream-view">
+
+					
+					
+
+					
+
+
+	
+		
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+<div class="conversation-toolbar-wrapper  top h-clear hide-on-editmode
+	
+		scrolltofixed-floating
+		scrolltofixed-top
+	
+" data-allow-history="0">
+	<div class="conversation-toolbar">
+
+
+		
+
+		
+
+			<ul class="toolset-left js-shrink-event-parent ">
+
+				
+				<li class="conversation-toolbar-height-shim js-shrink-event-child">
+					<div class="b-button">&nbsp;</div>
+				</li>
+
+				
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+				
+				
+
+				<!-- new conversation button -->
+				
+				
+				
+				
+				
+				
+				<!-- /new conversation button -->
+
+				
+				
+
+				
+					
+				
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+
+				
+				
+					<li class="js-shrink-event-child">
+						<b></b>
+					</li>
+				
+
+			</ul>
+		
+		
+
+		
+
+		<ul class="toolset-right js-shrink-event-parent">
+
+			
+
+			
+			
+				
+			
+
+			
+			
+
+			
+
+			
+
+			
+		</ul>
+	</div>
+
+
+	
+
+	
+</div>
+
+
+
+
+					<div class="conversation-content">
+						<ul class="conversation-list list-container h-clearfix article-list stream-view stream-view-full-width">
+
+							
+							
+							
+
+							
+							
+							
+								
+							
+								
+							
+								
+							
+
+							
+							
+
+							
+								
+									
+									
+								
+								
+									<!-- Starter Conversation -->
+									
+									
+
+
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+<li data-node-id="175046"
+	data-node-publishdate="1595968320" 
+	class="b-post js-post js-comment-entry__parent list-item list-item-text h-left h-clear conversation-starter js-conversation-starter" itemscope itemtype="http://schema.org/Article">
+
+	
+		
+
+		
+			
+			
+			<meta  itemprop="name" content="Using Attachments" />
+		
+
+		
+		
+		<meta  itemprop="url" content="https://forums.mirthproject.io/articles/175046-using-attachments" />
+	
+
+	<a id="post175046" class="anchor"></a>
+
+	
+
+	<div class="b-post__hide-when-deleted">
+		<hr class="b-divider--section">
+
+		
+		<!-- end list item header -->
+
+		
+		
+			
+		
+
+		<div class="js-post__content-wrapper list-item-body-wrapper h-clear" data-node-type="starter">
+			<div class="js-post__content list-item-body conversation-body">
+
+				
+					<div class="axd axd_first-post">
+						
+						
+						
+					</div>
+				
+
+				
+					<h2 class="b-post__stream-post-title js-post-title h-hide">Using Attachments</h2>
+					
+					<div class="post-content restore js-post__content-text h-wordwrap" itemprop="text">
+						
+							
+						
+						
+						<div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	PaperClips.jpg Views:	0 Size:	65.9 KB ID:	175056" title="PaperClips.jpg" data-attachmentid="175056" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175056&amp;d=1595635893" data-fullsize-url="filedata/fetch?id=175056&amp;d=1595635893" data-thumb-url="filedata/fetch?id=175056&amp;d=1595635893&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="PaperClips.jpg" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+<br />
+Attachments are a way to optimize how Connect handles large messages.<br />
+<br />
+Using Attachments reduces the amount of data being stored in the database. If you look at a message in the message browser you can see that in the raw, transformed, and encoded tabs there are message blobs being displayed. Each one of those represents an entry in the database. Using message attachments, you can reduce the amount of data being stored substantially since, generally, attachments only need to be stored once. Afterwards, they are referenced by their ID.<br />
+<br />
+<span style="font-size:20px"><b>Contents</b></span><ul><li>Attaching the Entire Message</li>
+<li>Attachments Using Regex</li>
+<li>Attachments Using JavaScript</li>
+<li>Attachments Using DICOM</li>
+<li>Attachments Using Custom Attachment Handler</li>
+<li>Manipulating Attachments Within a Connector</li>
+<li>Removing Attachments</li>
+<li>Cross-Channel Attachments</li>
+<li>Key Facts</li>
+</ul><span style="font-size:20px"><b>Attaching the Entire Message</b></span><br />
+<br />
+One of the simplest ways to use Attachments in Connect is simply attaching the entire message. For example, let’s say you have an HTTP Listener that you know will be taking PDF files. If you were to set up your Listener like this: <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	NoAttachment1.png Views:	0 Size:	75.9 KB ID:	175088" title="NoAttachment1.png" data-attachmentid="175088" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175088&amp;d=1595876170" data-fullsize-url="filedata/fetch?id=175088&amp;d=1595876170" data-thumb-url="filedata/fetch?id=175088&amp;d=1595876170&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="NoAttachment1.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+Then you would see the following in your messages: <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	NoAttachment2.png Views:	1 Size:	113.5 KB ID:	175089" title="NoAttachment2.png" data-attachmentid="175089" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175089&amp;d=1595876337" data-fullsize-url="filedata/fetch?id=175089&amp;d=1595876337" data-thumb-url="filedata/fetch?id=175089&amp;d=1595876337&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="NoAttachment2.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+But if you were to configure your channel to store the entire message as an Attachment:<br />
+<br />
+<img alt="Click image for larger version  Name:	EntireMessage1-Updated.png Views:	0 Size:	169.3 KB ID:	183372" title="EntireMessage1-Updated.png" data-attachmentid="183372" data-align="none" data-size="full" border="0" src="../filedata/fetch@id=183372&amp;d=1683575107" data-fullsize-url="filedata/fetch?id=183372&amp;d=1683575107" data-thumb-url="filedata/fetch?id=183372&amp;d=1683575107&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="EntireMessage1-Updated.png" class="bbcode-attachment thumbnail js-lightbox bbcode-attachment--lightbox" />​<br />
+Then you would see the following: <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	EntireMessage2.png Views:	1 Size:	52.5 KB ID:	175091" title="EntireMessage2.png" data-attachmentid="175091" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175091&amp;d=1595876410" data-fullsize-url="filedata/fetch?id=175091&amp;d=1595876410" data-thumb-url="filedata/fetch?id=175091&amp;d=1595876410&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="EntireMessage2.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+As you can see, the PDF bytes are no longer being stored in the message and have been extracted even before the preprocessor.<br />
+<br />
+<span style="font-size:20px"><b>Attachments Using Regex</b></span><br />
+<br />
+Sometimes you may need to work with large blobs of data that are included as part of a message but may not be the entire message. For example, what if an image is embedded in an HL7 message? This is a good scenario for using the Regex Attachment option.<br />
+<br />
+In this example, an image is embedded in <code>OBX 5.5</code> and we’ll be converting that portion to an Attachment and writing the image to the filesystem.<br />
+<br />
+In the source connector, select “Regex” in the Attachment dropdown and enter your regular expression. <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	RegexAttachment.png Views:	0 Size:	109.6 KB ID:	175095" title="RegexAttachment.png" data-attachmentid="175095" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175095&amp;d=1595884710" data-fullsize-url="filedata/fetch?id=175095&amp;d=1595884710" data-thumb-url="filedata/fetch?id=175095&amp;d=1595884710&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="RegexAttachment.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+Regex Snippet:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">(?:OBX\|(?:&#91;^|&#93;*?\|){4}(?:&#91;^|^&#93;*?\^){4})(&#91;^|^&#93;*)&#91;|^&#93;</pre>
+</div>Now, add a destination File Writer. In the destination, add a Transformer Mapper step to map <code>OBX 5.5</code> to <code>attachmentId</code>. <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	RegexTransformer.png Views:	0 Size:	66.0 KB ID:	175096" title="RegexTransformer.png" data-attachmentid="175096" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175096&amp;d=1595884761" data-fullsize-url="filedata/fetch?id=175096&amp;d=1595884761" data-thumb-url="filedata/fetch?id=175096&amp;d=1595884761&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="RegexTransformer.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+This will allow us to get the image by attachment ID and write it. Be sure to check File Type: <code>Binary</code>. Lastly, set the File Writer destination template to: <code>{attachmentId}</code>. This will be replaced with the actual attachmentId which will then be replaced with the attachment itself.<br />
+<br />
+<img alt="Click image for larger version  Name:	FileWriter-Updated.png Views:	0 Size:	271.1 KB ID:	183373" title="FileWriter-Updated.png" data-attachmentid="183373" data-align="none" data-size="full" border="0" src="../filedata/fetch@id=183373&amp;d=1683575173" data-fullsize-url="filedata/fetch?id=183373&amp;d=1683575173" data-thumb-url="filedata/fetch?id=183373&amp;d=1683575173&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="FileWriter-Updated.png" class="bbcode-attachment thumbnail js-lightbox bbcode-attachment--lightbox" />​<br />
+Now save and deploy the channel and send a test message. (You can test with the <code>test_message.txt</code> attached below which contains a Base 64 encoded PNG test image). If all goes well, you should see an image in the directory you specified.<br />
+<br />
+<span style="font-size:20px"><b>Attachments Using JavaScript</b></span><br />
+<br />
+You can also manipulate attachments with JavaScript. Using the same Attachment dropdown select “JavaScript” then click Properties. Add the following to extract the message into an Attachment, add the word “world” to it, and change the message to the attachment id. <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	JSAttachment.png Views:	0 Size:	72.6 KB ID:	175098" title="JSAttachment.png" data-attachmentid="175098" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175098&amp;d=1595884892" data-fullsize-url="filedata/fetch?id=175098&amp;d=1595884892" data-thumb-url="filedata/fetch?id=175098&amp;d=1595884892&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="JSAttachment.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+JavaScript Snippet:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">var attachment = addAttachment(message + &quot; world&quot;, &quot;text/plain&quot;, false);
+return attachment.getAttachmentId();</pre>
+</div>Now, if you send a test message with the word “hello”, whatever receives it will get “hello world”. Remember, before the destination sends the message out, it will replace the attachment id with the attachment.<br />
+<br />
+<span style="font-size:20px"><b>Attachments Using DICOM</b></span><br />
+<br />
+Some of the larger messages coming through Connect are of the DICOM type. A lot of performance testing and tweaking has gone in to making DICOM processing as efficient as possible but it’s still important that you configure your channels properly to take advantage of these improvements.<br />
+<br />
+It’s best to store DICOM messages as attachments and to ensure that Connect does this, you’ll want to set your source data type to “DICOM” which automatically selects the DICOM attachment type as well. If you, instead, used the “RAW” data type, then your large DICOM messages would be copied several times throughout the message processing pipeline taking up a lot more room and using more memory.<br />
+<img alt="Click image for larger version  Name:	DICOMAttachment-Updated.png Views:	0 Size:	217.9 KB ID:	183374" title="DICOMAttachment-Updated.png" data-attachmentid="183374" data-align="none" data-size="full" border="0" src="../filedata/fetch@id=183374&amp;d=1683575220" data-fullsize-url="filedata/fetch?id=183374&amp;d=1683575220" data-thumb-url="filedata/fetch?id=183374&amp;d=1683575220&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="DICOMAttachment-Updated.png" class="bbcode-attachment thumbnail js-lightbox bbcode-attachment--lightbox" />​<br />
+<span style="font-size:20px"><b>Attachments Using Custom Attachment Handler</b></span><br />
+<br />
+For the intrepid Java users out there, it’s also possible to write your own Java class to parse and manipulate attachments. Note, the class must extend <a href="https://github.com/nextgenhealthcare/connect/blob/development/server/src/com/mirth/connect/server/attachments/MirthAttachmentHandlerProvider.java" target="_blank">MirthAttachmentHandlerProvider</a>.<br />
+<br />
+With a custom attachment handler, the sky is the limit. For instance, this image shows an example custom attachment handler I’ve created and imported as a library. This uses a regular expression to parse the image and also flip the image vertically before attaching.<br />
+<img alt="Click image for larger version  Name:	CustomAttachment-Updated.png Views:	0 Size:	281.7 KB ID:	183377" title="CustomAttachment-Updated.png" data-attachmentid="183377" data-align="none" data-size="full" border="0" src="../filedata/fetch@id=183377&amp;d=1683575547" data-fullsize-url="filedata/fetch?id=183377&amp;d=1683575547" data-thumb-url="filedata/fetch?id=183377&amp;d=1683575547&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="CustomAttachment-Updated.png" class="bbcode-attachment thumbnail js-lightbox bbcode-attachment--lightbox" />​<br />
+And the outcome:<br />
+<img alt="Click image for larger version  Name:	CustomAttachmentFlipped-Updated.png Views:	0 Size:	352.8 KB ID:	183375" title="CustomAttachmentFlipped-Updated.png" data-attachmentid="183375" data-align="none" data-size="full" border="0" src="../filedata/fetch@id=183375&amp;d=1683575257" data-fullsize-url="filedata/fetch?id=183375&amp;d=1683575257" data-thumb-url="filedata/fetch?id=183375&amp;d=1683575257&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="CustomAttachmentFlipped-Updated.png" class="bbcode-attachment thumbnail js-lightbox bbcode-attachment--lightbox" />​<br />
+<span style="font-size:20px"><b>Manipulating Attachments Within a Connector</b></span><br />
+<br />
+Working with attachments from within your connectors is also available. Let’s say you have a channel already set up to parse out an attachment, but you want to edit that attachment before sending it out. That’s totally doable and we’ve added some new JavaScript methods to assist you with that.<br />
+<br />
+You could do the following from inside a source transformer.<br />
+<img alt="Click image for larger version  Name:	JSManipulateAttachment-Updated.png Views:	0 Size:	145.3 KB ID:	183376" title="JSManipulateAttachment-Updated.png" data-attachmentid="183376" data-align="none" data-size="full" border="0" src="../filedata/fetch@id=183376&amp;d=1683575298" data-fullsize-url="filedata/fetch?id=183376&amp;d=1683575298" data-thumb-url="filedata/fetch?id=183376&amp;d=1683575298&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="JSManipulateAttachment-Updated.png" class="bbcode-attachment thumbnail js-lightbox bbcode-attachment--lightbox" />​<br />
+JavaScript Snippet:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">// Get a list of the attachments associated with this message
+var attachmentList = getAttachments(false)
+
+// From the list of attachments, get the first one
+var attachment = attachmentList.get(0);
+
+// Get the content of the attachment
+var newString = attachment.getContentString();
+
+// Append to the attachment content
+newString = newString + &quot;*Some Additional Content*&quot;;
+
+// Write the new content back to the attachment
+attachment.setContentString(newString);
+
+// Update the attachment
+updateAttachment(attachment, false);</pre>
+</div>Another way you could do this (possibly decreasing memory consumption):<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">// Get a list of the Ids of the attachments associated with this message
+var attachmentIdList = getAttachmentIds();
+
+// From the list of attachment Ids, get the first one
+var attachmentId = attachmentIdList.get(0);
+
+// Get the attachment associated with the Id
+var attachment = getAttachment(attachmentId, false);
+
+// Get the content of the attachment
+var newString = attachment.getContentString();
+
+// Append to the attachment content
+newString = newString + &quot;*Some Additional Content*&quot;;
+
+// Write the new content back to the attachment
+attachment.setContentString(newString);
+
+// Update the attachment
+updateAttachment(attachment, false);</pre>
+</div>Note, there are also user utility methods that allow you to retrieve attachments from other completely unrelated channels. As long as you know the channel id and message id you can obtain the related attachments.<br />
+<br />
+Here are what a few of those utility methods look like:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">getAttachment(channelId, messageId, attachmentId, base64Decode);
+getAttachmentIds(channelId, messageId);
+updateAttachment(channelId, messageId, attachmentId, data, type, base64Encode);
+updateAttachment(channelId, messageId, attachment, base64Encode);</pre>
+</div><span style="font-size:20px"><b>Removing Attachments</b></span><br />
+<br />
+Note, for all attachment types, if your channel and subsequent destination does not care about the attachment data at all, you can further reduce disk usage by unchecking the “Store Attachments” checkbox on the Channel configuration screen which will extract the attachment from you message as usual, but will not store the attachment. It’s important to note that this means the attachment data can not be retrieved. <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	RemoveAttachments.png Views:	0 Size:	58.2 KB ID:	175103" title="RemoveAttachments.png" data-attachmentid="175103" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175103&amp;d=1595885133" data-fullsize-url="filedata/fetch?id=175103&amp;d=1595885133" data-thumb-url="filedata/fetch?id=175103&amp;d=1595885133&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="RemoveAttachments.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+<span style="font-size:20px"><b>Cross-Channel Attachments</b></span><br />
+<br />
+What if you have a Connect channel with an attachment that sends to another channel as part of your message processing pipeline? In this case, the attachment will be extracted and saved, then reattached before sending to the second channel which will then extract and save the attachment before reattaching and sending the message out. This is a sub-optimal situation since the attachment is being extracted and saved twice, but it can be improved.<br />
+<br />
+When setting the “Reattach Attachments” radio button to “No”, the attachment will not be re-attached before sending to the destination. Instead, any attachments found in the message will be expanded to include the Channel id and Message id in addition to the normal attachment id, which allows a downstream channel to properly handle the attachments it receives. <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	ReattachAttachments.png Views:	0 Size:	113.8 KB ID:	175104" title="ReattachAttachments.png" data-attachmentid="175104" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175104&amp;d=1595885187" data-fullsize-url="filedata/fetch?id=175104&amp;d=1595885187" data-thumb-url="filedata/fetch?id=175104&amp;d=1595885187&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="ReattachAttachments.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+The downstream channel will now receive the attachment, already extracted from the upstream channel meaning the upstream channel is no longer re-attaching and the downstream channel is no longer re-extracting, thus saving time and disk space. <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	ReattachAttachmentsId.png Views:	0 Size:	53.0 KB ID:	175105" title="ReattachAttachmentsId.png" data-attachmentid="175105" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175105&amp;d=1595885226" data-fullsize-url="filedata/fetch?id=175105&amp;d=1595885226" data-thumb-url="filedata/fetch?id=175105&amp;d=1595885226&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="ReattachAttachmentsId.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+<span style="font-size:20px"><b>Key Facts</b></span><ul><li>Attachments are extracted from the message before the preprocessor.</li>
+<li>Attachment data is replaced with an attachment ID.</li>
+</ul><span style="font-size:20px"><b>Further Discussion</b></span><br />
+<br />
+You can discuss feature requests in the issues section of the <a href="https://github.com/nextgenhealthcare/connect" target="_blank">Connect GitHub repository</a>.
+		<div class="js-post-attachments b-post-attachments h-clearfix">
+			Attached Files
+			<ul>
+				
+					
+						
+					
+
+					
+					
+
+					<li class="b-post-attachments__item h-left h-clear">
+						<a href="../filedata/fetch@id=175120">
+							
+								<span class="b-icon-fa b-icon-fa--16 fa-solid fa-file-lines"></span>
+								<span class="h-wordwrap">test_message.txt</span>
+								
+									
+								
+								<span
+									
+									
+								>(21.4 KB, 296 views)</span>
+							
+						</a>
+						
+					</li>
+				
+			</ul>
+		</div>
+
+					</div>
+					
+					
+	
+	
+	
+	
+	
+	<div class="b-post__edit h-margin-vert-l">
+		
+		
+			Last edited by <a href="../member/26018-peterl.html" data-vbnamecard="26018">peterl</a>; <span class="time">05-08-2023, 12:01 PM</span>.
+		
+		
+
+	</div>
+
+				
+			</div>
+
+			
+				
+
+
+
+
+
+
+
+
+			
+
+			
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+				
+				
+				
+				
+				
+
+				
+
+				
+
+				
+
+				
+
+
+				
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+
+	<div class="h-clearfix">
+		
+			<div class="h-margin-bottom-xl h-margin-top-none h-text-size--11" id="content-tags-175046">
+
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+		<strong>Tags:</strong>
+	
+
+	
+		
+		
+		
+
+		
+		
+			
+			
+			
+			
+			<span class="js-content-tag">
+				<a href="../search@searchJSON={%2522tag%2522%253A[%2522attachments%2522]}.html">attachments</a>, 
+			</span>
+		
+			
+			
+			
+			
+			<span class="js-content-tag">
+				<a href="../search@searchJSON={%2522tag%2522%253A[%2522channel+dev%2522]}.html">channel dev</a>
+			</span>
+		
+
+		
+		<meta  itemprop="keywords" content="attachments channel dev " />
+	
+</div>
+		
+
+		
+			<hr class="b-divider b-divider--post-controls" />
+		
+
+		<ul class="h-left js-post-info">
+
+			
+			
+
+			
+
+			
+			<li class="h-margin-top-xs h-flex-valign-center">
+
+
+<div class="reactions reactions__footer-container">
+	<div class="reactions__topic-reactions-container js-topic-reactions-list" data-nodeid="175046">
+		
+			
+			<div class="reactions__topic-reaction js-reactions-toggle-vote"
+				data-ivoted="0"
+				data-votetypeid="6"
+				data-nodeid="175046"
+			>
+				<span class="reactions__emoji">&#X1F44D</span>
+				<span class="reactions__topic-reaction--count js-reactions-count">2</span>
+			</div>
+		
+	</div>
+	
+	
+</div>
+
+			
+		</ul>
+
+		<ul class="h-margin-top-s h-right js-post-controls b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive" data-node-id="175046" data-dropdown-icon-classes="b-icon b-icon__ellipsis" data-dropdown-content-classes="b-comp-menu-dropdown__content--right">
+			
+
+			
+
+			
+
+			
+
+				
+
+					
+
+				
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</ul>
+
+
+	</div>
+</div>
+
+
+
+
+				<div class="edit-conversation-container OLD__edit-conversation-container"></div>
+
+				
+
+					
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+<div class="b-comments js-comments   b-comments--article js-comments--article h-margin-bottom-xl h-clearfix">
+
+	
+		
+			
+			
+			
+				
+			
+
+
+
+
+			<div class="b-comments__header js-comments__header b-media h-padding-vert-m h-padding-horiz-l">
+				<div class="b-media__img--rev js-comments__pagination h-hide">
+					<label>
+						 
+							
+							
+							
+								
+							
+							
+							
+								1 - 2
+							
+						
+					</label>
+					<span class="b-comments__pagination--up js-comments__page--prev h-margin-left-s  h-hide-imp" title="See previous comments"><span class="b-icon b-icon__arrow-up-m"></span></span>
+				</div>
+				<div class="js-comments__total h-margin-left-l b-media__body">
+					<span class="b-icon b-icon__speech-single h-margin-right-s"></span>
+					<label class="js-comments__total-text h-align-top">
+						
+							2 comments
+						
+					</label>
+				</div>
+			</div>
+
+
+
+
+			
+
+
+			
+			
+			
+			
+
+
+			<ul class="b-comments__comments js-comments__comments h-left" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+				
+				
+				
+				
+					
+					
+				
+					
+					
+				
+				
+
+				
+					
+						
+					
+
+					
+
+
+					<li data-node-id="175122" class="b-post b-comment js-comment js-post js-comment-entry__parent h-left h-clear  b-comment--article  ">
+	<a id="post175122" class="anchor"></a>
+
+	
+
+	<div>
+		<hr class="b-divider--section" />
+
+		<div class="b-media h-margin-bottom-l">
+			
+				<div class="b-media__img b-post__hide-when-deleted">
+					
+						<a href="../member/7158-pacmano.html" class="b-avatar x-small h-left h-margin-right-l"><img src="../core/image.php@userid=7158&amp;thumb=1&amp;dateline=1674528563" alt="pacmano" /></a>
+					
+				</div>
+			
+
+			<div class="b-media__img--rev">
+				<div class="comment-count">
+					
+					
+					
+					
+					
+						<a class="b-post__count js-show-post-link" href="175046-using-attachments@p=175122.html#post175122">#<span>1</span></a>
+					
+	
+					
+
+
+
+				</div>
+			</div>
+
+			<div class="b-media__body">
+				<div class="h-margin-bottom-xs b-post__hide-when-deleted">
+					
+					
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	<a href="../member/7158-pacmano.html"
+		class="b-comment__author" 
+		data-vbnamecard="7158">pacmano</a>
+
+					<span>commented</span>
+				</div>
+				<div class="b-post__timestamp">07-28-2020, 01:50 PM</div>
+				<div class="b-comment__edit-header  b-post__hide-when-deleted"><strong>Editing a comment</strong></div>
+			</div>
+		</div>
+		<div class="b-post__hide-when-deleted">
+			
+			<div class="OLD__post-content js-post__content h-clear h-wordwrap" itemprop="commentText">
+				
+				
+				Thanks for the article.   (just a test comment here)
+			</div>
+
+			
+
+			
+			
+			
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+
+	<div class="h-clearfix">
+		
+
+		
+			<hr class="b-divider b-divider--post-controls" />
+		
+
+		<ul class="h-left js-post-info">
+
+			
+			
+
+			
+
+			
+			<li class="h-margin-top-xs h-flex-valign-center">
+
+
+<div class="reactions reactions__footer-container">
+	<div class="reactions__topic-reactions-container js-topic-reactions-list" data-nodeid="175122">
+		
+	</div>
+	
+	
+</div>
+
+			
+		</ul>
+
+		<ul class="h-margin-top-s h-right js-post-controls b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive" data-node-id="175122" data-dropdown-icon-classes="b-icon b-icon__ellipsis" data-dropdown-content-classes="b-comp-menu-dropdown__content--right">
+			
+
+			
+
+			
+
+			
+
+				
+
+					
+
+				
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</ul>
+
+
+	</div>
+</div>
+
+
+		</div>
+
+
+
+		<div class="edit-conversation-container"></div>
+	</div>
+</li>
+
+					
+				
+					
+						
+					
+
+					
+
+
+					<li data-node-id="180640" class="b-post b-comment js-comment js-post js-comment-entry__parent h-left h-clear  b-comment--article  ">
+	<a id="post180640" class="anchor"></a>
+
+	
+
+	<div>
+		<hr class="b-divider--section" />
+
+		<div class="b-media h-margin-bottom-l">
+			
+				<div class="b-media__img b-post__hide-when-deleted">
+					
+						<a href="../member/436-jbartels.html" class="b-avatar x-small h-left h-margin-right-l"><img src="../core/images/default/default_avatar_thumb.png" alt="jbartels" /></a>
+					
+				</div>
+			
+
+			<div class="b-media__img--rev">
+				<div class="comment-count">
+					
+					
+					
+					
+					
+						<a class="b-post__count js-show-post-link" href="175046-using-attachments@p=180640.html#post180640">#<span>2</span></a>
+					
+	
+					
+
+
+
+				</div>
+			</div>
+
+			<div class="b-media__body">
+				<div class="h-margin-bottom-xs b-post__hide-when-deleted">
+					
+					
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	<a href="../member/436-jbartels.html"
+		class="b-comment__author" 
+		data-vbnamecard="436">jbartels</a>
+
+					<span>commented</span>
+				</div>
+				<div class="b-post__timestamp">01-24-2022, 02:44 PM</div>
+				<div class="b-comment__edit-header  b-post__hide-when-deleted"><strong>Editing a comment</strong></div>
+			</div>
+		</div>
+		<div class="b-post__hide-when-deleted">
+			
+			<div class="OLD__post-content js-post__content h-clear h-wordwrap" itemprop="commentText">
+				
+				
+				For the image example on OBX.5 - What is `attachmentId` at runtime? Is it the UUID or is it the &quot;ATTACH:UUID&quot; syntax?<br />
+<br />
+IOW if I somehow build my attachments manually and want to reference them in a file writer template, what should I be storing to the map?
+			</div>
+
+			
+
+			
+			
+			
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+
+	<div class="h-clearfix">
+		
+
+		
+			<hr class="b-divider b-divider--post-controls" />
+		
+
+		<ul class="h-left js-post-info">
+
+			
+			
+
+			
+
+			
+			<li class="h-margin-top-xs h-flex-valign-center">
+
+
+<div class="reactions reactions__footer-container">
+	<div class="reactions__topic-reactions-container js-topic-reactions-list" data-nodeid="180640">
+		
+	</div>
+	
+	
+</div>
+
+			
+		</ul>
+
+		<ul class="h-margin-top-s h-right js-post-controls b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive" data-node-id="180640" data-dropdown-icon-classes="b-icon b-icon__ellipsis" data-dropdown-content-classes="b-comp-menu-dropdown__content--right">
+			
+
+			
+
+			
+
+			
+
+				
+
+					
+
+				
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</ul>
+
+
+	</div>
+</div>
+
+
+		</div>
+
+
+
+		<div class="edit-conversation-container"></div>
+	</div>
+</li>
+
+					
+				
+
+			</ul>
+
+
+			<div class="b-comments__footer js-comments__footer b-media h-padding-vert-m h-padding-horiz-l h-clear h-hide">
+				<div class="b-media__img--rev js-comments__pagination">
+					<label>
+						
+					</label>
+					<span class="b-comments__pagination--down js-comments__page--next h-margin-left-s" title="See next comments"><span class="b-icon b-icon__arrow-down-m"></span></span>
+				</div>
+			</div>
+
+		
+	
+
+	
+</div>
+				
+
+				
+
+				
+				
+				
+
+				
+				
+				
+					<div class="notice comment-disabled">
+						
+							Posting comments is disabled.
+						
+					</div>
+				
+
+				
+				
+			
+		</div>
+	</div>
+</li>
+								
+								
+							
+								
+									
+									
+								
+								
+								
+							
+								
+									
+									
+								
+								
+								
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+		
+	</div>
+	<script type="text/javascript">
+	(function(){
+	
+		window.vBulletin = window.vBulletin || {};
+		vBulletin.widget = vBulletin.widget || {};
+		vBulletin.conversation = vBulletin.conversation || {};
+	
+		vBulletin.conversation.COMMENTS_PER_PAGE = Number('25') || 25;
+		vBulletin.conversation.POSTS_PER_PAGE = Number('') || 15;
+	})();
+	</script>
+
+
+
+
+
+	<!-- *** END WIDGET widgetid:64, widgetinstanceid:145, template:widget_articledisplay *** -->
+
+
+	
+		</div>
+	
+
+</div>
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+		
+	
+
+
+
+	
+		
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+
+
+
+<!-- section 1 -->
+
+
+
+<div class="canvas-widget-list section-1 js-sectiontype-secondary h-clearfix l-col__fixed-6 l-col__small--full has-adjacent-left-col h-padding-left-16 l-narrow-column">
+
+	
+
+	
+	<!-- *** START WIDGET widgetid:62, widgetinstanceid:146, template:widget_cmschannelnavigation *** -->
+	
+	
+
+
+	
+	
+
+
+<div class="b-module canvas-widget default-widget custom-html-widget" id="widget_146" data-widget-id="62" data-widget-instance-id="146">
+
+	
+	<div class="widget-header h-clearfix">
+		
+			
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Categories</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+		<hr class="widget-header-divider" />
+	
+
+
+	<div class="widget-content">
+
+		 
+		
+			
+		
+		
+
+		
+
+		
+
+		
+		
+
+		
+
+			
+			
+
+			<nav>
+			<ul class="b-channel-nav">
+			
+				
+					
+
+
+	<li class="b-channel-nav__item b-channel-nav__item--selected">
+		<a href="../articles.html">Articles</a>
+		
+		
+	</li>
+
+				
+			
+			</ul>
+			</nav>
+
+		
+
+	</div>
+</div>
+	<!-- *** END WIDGET widgetid:62, widgetinstanceid:146, template:widget_cmschannelnavigation *** -->
+
+	<!-- *** START WIDGET widgetid:63, widgetinstanceid:147, template:widget_tagnavigation *** -->
+	
+	
+
+
+	
+	
+
+
+<div class="b-module canvas-widget default-widget custom-html-widget" id="widget_147" data-widget-id="63" data-widget-instance-id="147">
+
+	
+	<div class="widget-header h-clearfix">
+		
+			
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">article_tags</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+		<hr class="widget-header-divider" />
+	
+
+
+	<div class="widget-content">
+
+		
+		
+
+		
+
+		
+
+		
+		
+			
+			
+		
+
+		
+			
+				<ul class="b-channel-nav">
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522attachments%2522}.html">attachments</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522channel+dev%2522}.html">channel dev</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522docker%2522}.html">docker</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522jms%2522}.html">jms</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522rabbitmq%2522}.html">rabbitmq</a>
+							
+								(1)
+							
+						</li>
+					
+				</ul>
+			
+		
+
+	</div>
+</div>
+	<!-- *** END WIDGET widgetid:63, widgetinstanceid:147, template:widget_tagnavigation *** -->
+
+	<!-- *** START WIDGET widgetid:12, widgetinstanceid:148, template:widget_search *** -->
+	
+	
+
+
+	
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+	
+	
+		
+	
+
+	
+
+
+
+
+
+<div class="b-module canvas-widget search-widget" id="widget_148" data-widget-id="12" data-widget-instance-id="148">
+
+	
+	<div class="widget-header h-clearfix">
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Latest Articles</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+		<hr class="widget-header-divider" />
+	
+
+
+	<div class="widget-content">
+		
+			
+				
+				
+				<ul class="conversation-list list-container h-clearfix">
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="181282">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="181282-mirth-connect-rabbitmq-jms-interface@p=183863.html">Mirth Connect RabbitMQ JMS Interface</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		<div align="left"> <br />
+ </div> <br />
+<br />
+There has been some question in the past about adding a RabbitMQ connector to Mirth Connect. While, yes, this could be done, I had wondered if there was a way to interface with RabbitMQ using Connect as is. After doing some digging I found a RabbitMQ JMS client and set out test it. The following is how I tested and what the interface looks like using Connect.<br />
+<br />
+<br />
+<span style="font-size:20px"><b>RabbitMQ Setup</b></span><br />
+<br />
+To avoid having to install and configure RabbitMQ myself, I...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-181282">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">04-22-2022, 02:37 PM</div>
+	
+	</div>
+</li>
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="177082">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="177082-forum-etiquette.html">Forum Etiquette</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/18430-brentm.html" data-vbnamecard="18430">brentm</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		Etiquette when posting to the forum:<ol class="decimal"><li>Double check that any content you post does not contain PHI.</li>
+<li><b>if you have a sales-related question</b>, please contact NextGen at <a href="../cdn-cgi/l/email-protection.html#19777e7a7677777c7a6d346a78757c6a59777c616d7e7c77377a7674"><span class="__cf_email__" data-cfemail="610f06020e0f0f0402154c12000d0412210f04191506040f4f020e0c">[email&#160;protected]</span></a>.</li>
+<li>READ THE <a href="https://www.nextgen.com/-/media/Files/nextgen-connect/nextgen-connect-310-user-guide.pdf" target="_blank">USER GUIDE</a></li>
+<li>Please don't hijack threads by changing the topic of the original post</li>
+<li>Search this forum and the internet first. Often NOT including Mirth in your internet query may provide more java and javascript results.</li>
+<li>What's your specific goal?</li>
+<li>In general, post detailed information. e.g.</li>
+</ol>...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-177082">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">01-13-2021, 10:56 AM</div>
+	
+	</div>
+</li>
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="175046">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="175046-using-attachments@p=180640.html">Using Attachments</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		<br />
+ <br />
+<br />
+Attachments are a way to optimize how Connect handles large messages.<br />
+<br />
+Using Attachments reduces the amount of data being stored in the database. If you look at a message in the message browser you can see that in the raw, transformed, and encoded tabs there are message blobs being displayed. Each one of those represents an entry in the database. Using message attachments, you can reduce the amount of data being stored substantially since, generally, attachments...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-175046">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">07-24-2020, 04:01 PM</div>
+	
+	</div>
+</li>
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="175025">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="175025-using-connect-with-docker@p=182583.html">Using Connect With Docker</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		<br />
+ <br />
+<br />
+<br />
+​We’re proud to announce that NextGen Connect is now available for use on <a href="https://hub.docker.com/r/nextgenhealthcare/connect" target="_blank">Docker Hub!</a><br />
+<br />
+In the past, NextGen Connect has been available to install and run locally in Windows, Linux, Mac OSX, and our hard and soft Appliance solutions. The developers at NextGen evaluate and use a variety of tools when updating, testing, and debugging Connect. We’ve actually been using Docker for testing Connect for about a year and have found it very convenient and we hope...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-175025">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">07-23-2020, 08:45 AM</div>
+	
+	</div>
+</li>
+					
+				</ul>
+			
+			<div class="widget-footer h-align-left h-clear">
+				
+				<a href="../search@r=14325616.html" class="b-button">View All</a>
+			</div>
+		
+	</div>
+</div>
+
+
+
+	<!-- *** END WIDGET widgetid:12, widgetinstanceid:148, template:widget_search *** -->
+
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 3 -->
+
+
+
+<div class="canvas-widget-list section-3 js-sectiontype-extra h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 201 -->
+
+
+
+<div class="canvas-widget-list section-201 js-sectiontype-global_before_footer h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+</div>
+
+</div>
+	<div class="h-clear"></div>
+</main>
+
+	<footer id="footer">
+		
+		
+		<nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent">
+			
+			
+			
+			
+			
+				
+			
+			
+			<ul class="h-left js-footer-chooser-list h-margin-left-xxl js-shrink-event-child">
+				
+				
+					<li>
+
+						<div class="b-comp-menu-dropdown js-comp-menu-dropdown b-comp-menu-dropdown--open-on-hover b-comp-menu-dropdown--direction-up js-languagechooser js-select-on-xsmall h-margin-right-l">
+							<div class="b-comp-menu-dropdown__trigger js-comp-menu-dropdown__trigger b-comp-menu-dropdown__trigger--arrow">
+								
+									
+								
+									
+										English (US)
+									
+								
+									
+								
+									
+								
+							</div>
+							<ul class="b-comp-menu-dropdown__content js-comp-menu-dropdown__content b-comp-menu-dropdown__content--left">
+								
+									<li class="b-comp-menu-dropdown__content-item">
+										<a href="../index.html#" data-languageid="2">Deutsch (Du)</a>
+									</li>
+								
+									<li class="b-comp-menu-dropdown__content-item b-comp-menu-dropdown__content-item--current">
+										<a href="../index.html#" data-languageid="1">English (US)</a>
+									</li>
+								
+									<li class="b-comp-menu-dropdown__content-item">
+										<a href="../index.html#" data-languageid="4">French</a>
+									</li>
+								
+									<li class="b-comp-menu-dropdown__content-item">
+										<a href="../index.html#" data-languageid="3">Spanish</a>
+									</li>
+								
+							</ul>
+						</div>
+
+					</li>
+				
+				
+			</ul>
+
+			<ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive js-shrink-event-child" data-dropdown-trigger-phrase="go_to_ellipsis" data-dropdown-menu-classes="h-margin-vert-l b-comp-menu-dropdown--direction-up" data-dropdown-trigger-classes="b-comp-menu-dropdown__trigger--arrow">
+				
+				
+					
+					
+					
+						
+						
+					
+					
+					
+					
+					
+					
+					
+					
+
+					<li class="">
+						<a rel="nofollow" href="../help.html">Help</a>
+					</li>
+
+				
+					
+					
+					
+						
+						
+					
+					
+					
+					
+					
+					
+					
+					
+
+					<li class="">
+						<a rel="nofollow" href="../contact-us.html">Contact Us</a>
+					</li>
+
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+
+					<li class="">
+						<a href="../privacy.html">Privacy</a>
+					</li>
+
+				
+				<li><a href="../index.html#" class="js-footer-go-to-top">Go to top</a></li>
+			</ul>
+		</nav>
+		
+      
+      
+      
+      
+
+      
+    
+
+	</footer>
+</div>
+<div id="footer-copyright">
+	<div id="footer-user-copyright">NextGen Healthcare</div>
+	<div id="footer-vb-copyright">Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">vBulletin&reg;</a> Version 6.0.0 <br />Copyright &copy; 2023 MH Sub I, LLC dba vBulletin. All rights reserved. </div>
+	<div id="footer-current-datetime">All times are GMT-9. This page was generated at 07:27 PM.</div>
+</div>
+</div>
+
+<div id="loading-indicator" class="js-loading-indicator b-ajax-loading-indicator h-hide">
+	<span>Working...</span>
+</div>
+<div class="js-flash-message b-ajax-loading-indicator b-ajax-loading-indicator--medium h-hide">
+	<span class="js-flash-message-content"></span>
+</div>
+<div id="confirm-dialog" class="sb-dialog">
+	<div class="dialog-content h-clearfix">
+		<div class="icon h-left"></div>
+		<div class="message"></div>
+	</div>
+	<div class="b-button-group">
+		<button id="btnConfirmDialogYes" type="button" class="b-button b-button--primary js-button">Yes</button>
+		<button id="btnConfirmDialogNo" type="button" class="b-button b-button--secondary js-button">No</button>
+	</div>
+</div>
+<div id="alert-dialog" class="sb-dialog">
+	<div class="dialog-content h-clearfix">
+		<div class="icon h-left"></div>
+		<div class="message"></div>
+	</div>
+	<div class="b-button-group">
+		<button id="btnAlertDialogOK" type="button" class="b-button b-button--primary js-button">OK</button>
+	</div>
+</div>
+<div id="prompt-dialog" class="sb-dialog">
+	<div class="dialog-content table h-clearfix">
+		<div class="message td"></div>
+		<div class="input-box-container td">
+			<input type="text" class="input-box textbox" />
+			<textarea class="input-box textbox h-hide" rows="3"></textarea>
+		</div>
+	</div>
+	<div class="js-prompt-error h-hide"></div>
+	<div class="b-button-group">
+		<button id="btnPromptDialogOK" type="button" class="b-button b-button--primary js-button">OK</button>
+		<button id="btnPromptDialogCancel" type="button" class="b-button b-button--secondary js-button">Cancel</button>
+	</div>
+</div>
+<div id="slideshow-dialog" class="sb-dialog slideshow">
+	<div class="b-icon b-icon__x-square--gray close-btn">X</div>
+	<div class="slideshow-wrapper"></div>
+	<div class="caption"></div>
+	<div class="thumbnails-wrapper">
+		<div class="thumbnails"></div>
+	</div>
+
+</div>
+
+<div class="unsubscribe-overlay-container"></div>
+
+<div id="fb-root" data-facebook-language="en_US"></div>
+	
+
+<div class="reactions reactions__list-container dialog-container js-reactions-available-list">
+	<div class="reactions__list">
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="1"
+				title="grinning face"
+				alt="grinning face"
+			>
+				<span class="reactions__emoji">&#X1F600</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="2"
+				title="smiling face with hearts"
+				alt="smiling face with hearts"
+			>
+				<span class="reactions__emoji">&#X1F970</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="5"
+				title="nauseated face"
+				alt="nauseated face"
+			>
+				<span class="reactions__emoji">&#X1F922</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="3"
+				title="smiling face with sunglasses"
+				alt="smiling face with sunglasses"
+			>
+				<span class="reactions__emoji">&#X1F60E</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="4"
+				title="enraged face"
+				alt="enraged face"
+			>
+				<span class="reactions__emoji">&#X1F621</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="6"
+				title="thumbs up"
+				alt="thumbs up"
+			>
+				<span class="reactions__emoji">&#X1F44D</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="7"
+				title="thumbs down"
+				alt="thumbs down"
+			>
+				<span class="reactions__emoji">&#X1F44E</span>
+			</div>
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="../js/jquery/jquery-3.5.1.min.js"><\/script>');</script>
+
+<script type="text/javascript" src="../js/footer-rollup-600.js"></script>
+
+
+
+<script type="text/javascript">
+	
+		window.vBulletin = window.vBulletin || {};
+	
+		vBulletin.version = '6.0.0';
+</script>
+
+
+
+
+	<div class="b-modal-banner__banner js-privacy-consent-banner__banner h-hide-imp b-modal-banner__banner--center">
+	
+		<p class="b-modal-banner__paragraph">We process personal data about users of our site, through the use of cookies and other technologies, to deliver our services, personalize advertising, and to analyze site activity. We may share certain information about our users with our advertising and analytics partners. For additional details, refer to our <a href="https://www.nextgen.com/legal-notice" target="_blank" class="b-modal-banner__clickable">Privacy Policy</a>.</p>
+
+<p class="b-modal-banner__paragraph">By clicking "<b>I AGREE</b>" below, you agree to our <a href="https://www.nextgen.com/legal-notice" target="_blank" class="b-modal-banner__clickable">Privacy Policy</a> and our personal data processing and cookie practices as described therein. You also acknowledge that this forum may be hosted outside your country and you consent to the collection, storage, and processing of your data in the country where this forum is hosted.</p>
+		<p class="b-modal-banner__paragraph">
+			<a href="../index.html#" class="b-button b-button--primary b-modal-banner__clickable js-privacy-consent-banner__button">I Agree</a>
+		</p>
+	
+</div>
+<div class="b-modal-banner__overlay js-privacy-consent-banner__overlay h-hide-imp"></div>
+	
+
+
+
+<script type="text/javascript" src="../js/login.js@v=600"></script>
+<script type="text/javascript" src="../js/facebook.js@v=600"></script>
+<script type="text/javascript" src="../js/conversation-rollup-600.js"></script>
+<script type="text/javascript" src="../js/privacy-consent-banner.js@v=600"></script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'80d0a64f78bab105',t:'MTY5NTc4NTIzMy45MzQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>Mirth Community - Open Source HIT</title>
+		<link>https://forums.mirthproject.io/</link>
+		<description />
+		<language>en</language>
+		<lastBuildDate>Wed, 27 Sep 2023 03:29:30 GMT</lastBuildDate>
+		<generator>vBulletin</generator>
+		<ttl>60</ttl>
+		<image>
+			<url>images/misc/rss.png</url>
+			<title>Mirth Community - Open Source HIT</title>
+			<link>https://forums.mirthproject.io/</link>
+		</image>
+	</channel>
+</rss>

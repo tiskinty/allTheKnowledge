@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>Mirth Community - General Discussion</title>
+		<link>https://forums.mirthproject.io/</link>
+		<description />
+		<language>en</language>
+		<lastBuildDate>Wed, 27 Sep 2023 03:26:46 GMT</lastBuildDate>
+		<generator>vBulletin</generator>
+		<ttl>60</ttl>
+		<image>
+			<url>images/misc/rss.png</url>
+			<title>Mirth Community - General Discussion</title>
+			<link>https://forums.mirthproject.io/</link>
+		</image>
+		<item>
+			<title>Mirth 3.12 upgrade to 4.4.0 compatability question</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/general-discussion/183885-mirth-3-12-upgrade-to-4-4-0-compatability-question</link>
+			<pubDate>Wed, 06 Sep 2023 05:51:56 GMT</pubDate>
+			<description><![CDATA[We'd like to upgrade Mirth Connect version from 3.12.0 to 4.4.0, team has built up lots of channels, funcations, settings on 3.12.0. 
+Is there any...]]></description>
+			<content:encoded><![CDATA[We'd like to upgrade Mirth Connect version from 3.12.0 to 4.4.0, team has built up lots of channels, funcations, settings on 3.12.0.<br />
+Is there any issue in importing 3.12.0 codes into 4.4.0? Any known issues, heads-up user needs to be aware of?]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/general-discussion">General Discussion</category>
+			<dc:creator>InFerNaL_LioN</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/general-discussion/183885-mirth-3-12-upgrade-to-4-4-0-compatability-question</guid>
+		</item>
+		<item>
+			<title>Data Quality and Transformation ~ eCQM</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/general-discussion/183864-data-quality-and-transformation-~-ecqm</link>
+			<pubDate>Fri, 01 Sep 2023 12:44:31 GMT</pubDate>
+			<description>Question: 
+ 
+Can anyone share with me how some of you use Mirth Connect for Data Transformation and Data Quality with regard to eCQM reporting and...</description>
+			<content:encoded><![CDATA[<b>Question:</b><br />
+<br />
+Can anyone share with me how some of you use Mirth Connect for Data Transformation and Data Quality with regard to eCQM reporting and code standardization?<br />
+​]]></content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/general-discussion">General Discussion</category>
+			<dc:creator>sbettincourt</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/general-discussion/183864-data-quality-and-transformation-~-ecqm</guid>
+		</item>
+		<item>
+			<title>Is there any information of local distributor in China mainland?</title>
+			<link>https://forums.mirthproject.io/forum/mirth-connect/general-discussion/183850-is-there-any-information-of-local-distributor-in-china-mainland</link>
+			<pubDate>Mon, 28 Aug 2023 09:12:38 GMT</pubDate>
+			<description>We have interests in applying Mirth Connection commercial version into some projects in China, is there any local distributor we can contact with to...</description>
+			<content:encoded>We have interests in applying Mirth Connection commercial version into some projects in China, is there any local distributor we can contact with to know about the sales information?</content:encoded>
+			<category domain="https://forums.mirthproject.io/forum/mirth-connect/general-discussion">General Discussion</category>
+			<dc:creator>InFerNaL_LioN</dc:creator>
+			<guid isPermaLink="true">https://forums.mirthproject.io/forum/mirth-connect/general-discussion/183850-is-there-any-information-of-local-distributor-in-china-mainland</guid>
+		</item>
+	</channel>
+</rss>

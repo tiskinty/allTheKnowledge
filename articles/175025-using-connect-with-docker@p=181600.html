@@ -1,0 +1,3806 @@
+<!DOCTYPE html>
+<html id="htmlTag" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+	
+	
+	<base href="" />
+	
+		<link rel="Shortcut Icon" href="../favicon.ico" type="image/x-icon" />
+	
+
+	
+	
+	
+		
+		
+	
+
+	
+
+	
+	
+
+
+<!-- 
+base url: https://forums.mirthproject.io
+fontsDir: https://forums.mirthproject.io/fonts/fontawesome/webfonts
+cssDir: https://forums.mirthproject.io/fonts/fontawesome/css
+-->
+
+<link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="../fonts/fontawesome/css/brands.css" rel="stylesheet">
+<link href="../fonts/fontawesome/css/solid.css" rel="stylesheet">
+<link href="../fonts/fontawesome/css/regular.css" rel="stylesheet">
+
+	
+	<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_reset.css,css_unreset.css,css_utilities.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="https://forums.mirthproject.io/css.php?styleid=8&amp;td=ltr&amp;sheet=css_imgareaselect-animated.css,css_jquery-ui-1_12_1_custom.css,css_jquery_qtip.css,css_jquery_selectBox.css,css_jquery_autogrow.css,css_global.css,css_fonts.css,css_b_link.css,css_b_layout.css,css_b_grid.css,css_b_button.css,css_b_button_group.css,css_b_icon.css,css_b_icon_fa.css,css_b_tabbed_pane.css,css_b_form_control.css,css_b_form_input.css,css_b_form_select.css,css_b_form_textarea.css,css_b_media.css,css_b_divider.css,css_b_avatar.css,css_b_namecard.css,css_b_ajax_loading_indicator.css,css_responsive.css,css_b_vbscroller.css,css_b_theme_selector.css,css_b_top_background.css,css_b_module.css,css_b_comp_menu_horizontal.css,css_b_comp_menu_dropdown.css,css_b_comp_menu_vert.css,css_b_top_menu.css&amp;ts=1694457151" />
+
+<script type="text/javascript" src="../js/header-rollup-600.js"></script>
+
+	
+	
+		<meta property="og:site_name" content="Mirth Community" />
+		<meta property="og:description" content="We’re proud to announce that NextGen Connect is now available for use on Docker Hub! Try it today!" />
+		<meta property="og:url" content="https://forums.mirthproject.io/articles/175025-using-connect-with-docker" />
+		
+		<meta property="og:type" content="website" />
+	
+	
+
+	
+	
+	<link rel="canonical" href="175025-using-connect-with-docker@p=182583.html" />
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+	
+	
+	
+		
+
+	<title>
+		
+			Using Connect With Docker - 
+		
+		Mirth Community
+	</title>
+
+	<meta name="description" content="We’re proud to announce that NextGen Connect is now available for use on Docker Hub! Try it today!" />
+	<meta name="generator" content="vBulletin 6.0.0" />
+
+	
+	
+
+	<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_login.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_blogs_groups.css,css_b_sidebar_field.css,css_b_flexgrid.css,css_b_groupgrid.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_reactions.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="https://forums.mirthproject.io/css.php?styleid=8&amp;td=ltr&amp;sheet=css_b_post.css,css_b_post_control.css,css_b_post_attachments.css,css_b_post_notice.css,css_b_post_sm.css,css_b_comments.css,css_b_comment.css,css_b_comment_entry.css,css_b_userinfo.css,css_b_meter.css,css_b_bbcode.css,css_b_bbcode_user.css,css_b_event.css,css_b_link_thumbnail_list.css,css_b_thumbnail_nav.css&amp;ts=1694457151" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_b_sharing_menu.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_b_post_column.css,css_b_channel_nav.css,css_b_article_content_pagenav.css&amp;ts=1694457151.css" />
+<link rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_b_modal_banner.css&amp;ts=1694457151.css" />
+<link class="js-additional-css" rel="stylesheet" type="text/css" href="../css.php@styleid=8&amp;td=ltr&amp;sheet=css_additional.css&amp;ts=1694457151.css" />
+
+<script type="text/javascript">
+		if (location.hash) {
+			document.write('<style type="text/css"> a.anchor { display:none;} <\/style>');
+		}
+
+		var uploadUrlTarget = "https://forums.mirthproject.io/uploader/url";
+		var pageData = {
+			"baseurl": "https://forums.mirthproject.io",
+			"baseurl_path": "/",
+			"baseurl_core": "https://forums.mirthproject.io/core",
+			"baseurl_pmchat": "https://forums.mirthproject.io/pmchat/chat",
+			"pageid": "29",
+			"pagetemplateid": "36",
+			"channelid": "13",
+			"nodeid": "175025",
+			"userid": "0",
+			"username": "Guest",
+			"musername": "Guest",
+			"user_startofweek": "1",
+			
+			"user_lang_pickerdateformatoverride": "",
+			"user_editorstate": "",
+			"textDirLeft": "left",
+			"textDirRight": "right",
+			"textdirection": "ltr",
+			"can_use_sitebuilder": "",
+			"cookie_prefix": "vb5014",
+			"cookie_path": "/",
+			"cookie_domain": "",
+			"inlinemod_cookie_name": "inlinemod_nodes",
+			
+				"pagenum": "1",
+			
+			"languageid": "1",
+			"threadmarking": "2",
+			"lastvisit": "1695785197",
+			"phrasedate": "1694457151",
+			"optionsdate": "1694457201",
+			
+			"current_server_datetime": "1695785436",
+			"simpleversion": "v=600",
+			
+			"showhv_post": "1",
+			"crontask": "runCron",
+			"securitytoken": "guest",
+			"privacystatus": "1",
+			"flash_message": "",
+			"registerurl": "https://forums.mirthproject.io/register",
+			"activationurl": "https://forums.mirthproject.io/activateuser",
+			"helpurl": "https://forums.mirthproject.io/help",
+			"contacturl": "https://forums.mirthproject.io/contact-us",
+			"datenow": "09-26-2023"
+		};
+		
+		
+
+	</script>
+	
+	
+<link rel="alternate" title="Mirth Community" type="application/rss+xml" href="../external@type=rss2" />
+<link rel="alternate" title="Mirth Community -- Articles" type="application/rss+xml" href="../external@type=rss2&amp;nodeid=13" />
+</head>
+
+	
+
+
+
+
+
+
+
+	
+
+<body id="vb-page-body" class="l-desktop page29 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage" data-usergroupid="1" data-styleid="8">
+<script type="text/javascript">
+	vBulletin.Responsive.Debounce.checkBrowserSize();
+</script>
+
+
+
+
+	
+
+
+<div class="b-top-menu__background b-top-menu__background--sitebuilder js-top-menu-sitebuilder h-hide-on-small h-hide">
+	<div class="b-top-menu__container">
+		<ul class="b-top-menu b-top-menu--sitebuilder js-top-menu-sitebuilder--list js-shrink-event-parent">
+			
+		</ul>
+	</div>
+</div>
+
+<nav class="b-top-menu__background js-top-menu-user">
+	<div class="b-top-menu__container">
+		<ul class="b-top-menu b-top-menu--user js-top-menu-user--list js-shrink-event-parent">
+			
+
+
+
+
+	
+
+
+
+	<li class="b-top-menu__item b-top-menu__item--no-left-divider b-top-menu__item--no-right-divider username-container js-shrink-event-child">
+
+		<div class="b-comp-menu-dropdown b-comp-menu-dropdown--headerbar js-comp-menu-dropdown b-comp-menu-dropdown--open-on-hover js-login-menu">
+			<div id="lnkLoginSignupMenu" class="b-comp-menu-dropdown__trigger js-comp-menu-dropdown__trigger b-comp-menu-dropdown__trigger--arrow b-comp-menu-dropdown__trigger--headerbar js-button" tabindex="0">
+				Login or Sign Up
+			</div>
+
+			<ul class="b-comp-menu-dropdown__content js-comp-menu-dropdown__content b-comp-menu-dropdown__content--right">
+
+				<li class="b-comp-menu-dropdown__content-item js-comp-menu-dropdown__content-maintain-menu b-comp-menu-dropdown__content-item--no-hover">
+					
+
+<div class='js-login-form-main-container login-form-main-container'>
+
+<div class="js-error-box error h-margin-bottom-l h-hide"></div>
+
+<div class="js-login-message-box login-message-box h-hide">
+	<div class="h-center-container"><div class="h-center">Logging in...</div></div>
+</div>
+
+<form action="../index.html" method="post" class="h-clearfix js-login-form-main ">
+	<div class="login-fieldset table">
+		<div class="tr">
+			
+				
+			
+			<span class="td">
+				<input type="text" name="username" value="" class="js-login-username b-form-input__input b-form-input__input--full" placeholder="User Name" />
+			</span>
+		</div>
+		<div class="tr">
+			<span class="td">
+				<input type="password" autocomplete="off" name="password" class="js-login-password b-form-input__input b-form-input__input--full" placeholder="Password" />
+			</span>
+		</div>
+	</div>
+
+	
+	
+		<div class="h-warning h-text-size--11">By logging into your account, you agree to our <a href="https://www.nextgen.com/legal-notice" target="_blank">Privacy Policy</a>, personal data processing and storage practices as described therein.</div>
+		<input type="hidden" name="privacyconsent" value="1" />
+	
+
+	<div class="secondary-controls h-left h-clear-left h-margin-top-s">
+		<label><input type="checkbox" name="rememberme"  />Remember me</label>
+	</div>
+
+	<div class="primary-controls h-right h-clear-right h-margin-top-s">
+		<button type="button" class="js-login-button b-button b-button--primary">Log in</button>
+	</div>
+
+	<div class="secondary-controls h-left h-clear-left">
+		<a href="../lostpw.html" class='b-link lost-password-link'>Forgot password or user name?</a>
+	</div>
+
+	<div class="primary-controls h-right h-clear-right">
+		
+			
+			
+			
+		
+		or <a id="idLoginSignup" href="../register@urlpath=aHR0cHM6Ly9mb3J1bXMubWlydGhwcm9qZWN0LmlvLy9hcnRpY2xlcy8xNzUwMjUtdXNpbmctY29ubmVjdC13aXRoLWRvY2tlcg==.html">Sign Up</a>
+	</div>
+
+</form>
+</div>
+				</li>
+
+				
+				
+
+				<li id="externalLoginProviders" class="b-comp-menu-dropdown__content-item js-comp-menu-dropdown__content-maintain-menu b-comp-menu-dropdown__content-item--no-hover js-external-login-providers h-clearfix h-hide-imp">
+					<span class="h-left h-margin-left-s login-external-label">Log in with</span>
+					
+					
+					
+		
+
+			
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</li>
+
+	
+
+		</ul>
+	</div>
+</nav>
+
+<div id="sitebuilder-wrapper" class="noselect h-clearfix h-hide-on-small">
+	
+</div>
+
+<div class="main-navbar-bottom-line"></div>
+
+<div id="outer-wrapper">
+<div id="wrapper">
+
+	
+	<div id="header-axd" class="header-edit-box axdnum_1 h-clearfix">
+		
+		<div class="axd-container axd-container_header">
+			<div class="admin-only">
+				
+			</div>
+			<div class="axd axd_header">
+				
+			</div>
+		</div>
+		<div class="axd-container axd-container_header2">
+			<div class="admin-only">
+				
+			</div>
+			<div class="axd axd_header2">
+				
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+	
+	<header class="b-top-background__header-mainnav-subnav">
+
+		
+		<div class="b-top-background__header-mainnav">
+
+			
+			<div id="header" class="noselect">
+				<div class="header-cell header-edit-box">
+					
+					<div class="site-logo">
+						<a href="../index.html"><img src="../filedata/fetch@filedataid=3830" data-orig-src="filedata/fetch?filedataid=3830" alt="Logo" title="Powered by vBulletin" /></a>
+					</div>
+				</div>
+				<div class="toolbar">
+					<ul class="h-right">
+						
+						
+						
+						<li class="search-container">
+							<form id="searchForm" action="https://forums.mirthproject.io/search" class="h-left" method="GET">
+								<div class="h-left">
+
+									
+									<div class="search-box h-clearfix">
+
+										<div class="search-term-container">
+
+											<input type="text" name="q" id="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow" autocomplete="off" />
+
+											<div class="search-menu-container h-clearfix">
+												<div class="vertical-divider-left"></div>
+												<div class="b-comp-menu-dropdown js-comp-menu-dropdown b-comp-menu-dropdown--open-on-hover b-comp-menu-dropdown--header-search">
+													<div class="b-comp-menu-dropdown__trigger js-comp-menu-dropdown__trigger b-comp-menu-dropdown__trigger--arrow js-button" tabindex="0"></div>
+													<ul class="b-comp-menu-dropdown__content js-comp-menu-dropdown__content">
+
+	<li class="b-comp-menu-dropdown__content-item b-comp-menu-dropdown__content-item--first b-comp-menu-dropdown__content-item--no-hover js-comp-menu-dropdown__content-maintain-menu">
+
+		<div class="searchPopupBody">
+
+			<label><input type="checkbox" name="searchFields[title_only]" class="searchFields_title_only" value="1" />Search in titles only</label>
+
+			
+
+			
+				
+				
+					<label><input type="checkbox" name="searchFields[channel][]" class="searchFields_channel" value="13" />Search in Articles only</label>
+				
+			
+
+			<div class="b-button-group h-margin-top-xs">
+				<button type="submit" id="btnSearch-popup" class="b-button b-button--primary">Search</button>
+			</div>
+
+		</div>
+
+		<input type="hidden" name="searchJSON" value="" />
+	</li>
+
+	<li class="b-comp-menu-dropdown__content-item js-comp-menu-dropdown__content-maintain-menu">
+		<a href="../index.html#" id="btnAdvSearch" class="adv-search-btn">Advanced Search</a>
+	</li>
+
+</ul>
+												</div>
+											</div>
+
+										</div>
+
+										<button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button>
+
+									</div>
+
+								</div>
+							</form>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+
+			
+			<nav id="channel-tabbar" class="h-clearfix noselect">
+				<ul class="channel-tabbar-list h-left b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-small b-comp-menu-dropdown--inactive js-comp-menu-dropdown__content--main-menu h-hide-on-small js-shrink-event-parent">
+
+					
+						
+					
+
+					
+					
+					
+						
+						
+						
+						<li class=" section-item js-shrink-event-child">
+							<a   href="../index.html" class="h-left navbar_home">Forums</a>
+							
+								<span class="channel-tabbar-divider"></span>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+						
+						
+						
+						<li class=" section-item js-shrink-event-child">
+							<a   href="../blogs.html" class="h-left navbar_blogs">Blogs</a>
+							
+								<span class="channel-tabbar-divider"></span>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+						
+						
+						
+						<li class="current section-item js-shrink-event-child">
+							<a   href="../articles.html" class="h-left navbar_articles">Articles</a>
+							
+								<span class="channel-tabbar-divider"></span>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+						
+						
+						
+						<li class=" section-item js-shrink-event-child">
+							<a   href="../social-groups.html" class="h-left navbar_social_groups">Groups</a>
+							
+							<span class="mobile dropdown-icon"><span class="icon h-right"></span></span>
+						</li>
+					
+					
+				</ul>
+			</nav>
+
+
+		</div>
+
+
+		
+		<nav id="channel-subtabbar" class="h-clearfix h-hide h-hide-on-small h-block js-channel-subtabbar">
+			<ul class="h-left channel-subtabbar-list js-channel-subtabbar-list js-shrink-event-parent">
+				
+			</ul>
+		</nav>
+
+
+	</header>
+
+
+	
+		
+	
+
+	
+	
+		
+		<nav class="breadcrumbs-wrapper">
+		<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+			<li class="crumb">
+				<a class="crumb-link h-flex-valign-center" href="../index.html">
+					<span class="b-icon b-icon__home" title="Home"></span>
+				</a>
+			</li>
+			
+				
+					
+					
+				
+				<li class="crumb">
+					<span class="b-icon b-icon__chevron-right--gray separator"></span>
+					
+						<a class="crumb-link" href="../articles.html">Articles</a>
+					
+				</li>
+			
+		</ul>
+		</nav>
+	
+
+	
+
+	
+	
+		
+			
+			
+				
+				
+				
+			
+		
+			
+			
+				
+				
+				
+			
+		
+	
+
+	
+
+	
+
+<ul id="notices" class="notices">
+	
+	
+		
+		<li class="notice restore" data-notice-id="2" data-notice-persistent="1">Hi everyone, <span style="color: red; font-weight: bold">please check out our new discussion forum located in our GitHub site</span>: <b><a href="https://github.com/nextgenhealthcare/connect/discussions">https://github.com/nextgenhealthcare/connect/discussions</a></b>. Let us know your feedback as we try out this new part of GitHub! Don't worry, the content in these forums won't be going away and will at a minimum be preserved for historical reference.</li>
+	
+</ul>
+
+
+	
+
+
+	
+	<main id="content">
+		<div class="canvas-layout-container js-canvas-layout-container">
+
+<div id="canvas-layout-wide-narrow" class="canvas-layout" data-layout-id="2">
+
+	
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 200 -->
+
+
+
+<div class="canvas-widget-list section-200 js-sectiontype-global_after_breadcrumb h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 2 -->
+
+
+
+<div class="canvas-widget-list section-2 js-sectiontype-notice h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+	<!-- *** START WIDGET widgetid:37, widgetinstanceid:143, template:widget_announcement *** -->
+	
+	
+
+
+	
+	
+
+
+
+
+
+<div class="b-module canvas-widget default-widget announcement-widget empty" id="widget_143" data-widget-id="37" data-widget-instance-id="143">
+	
+	<div class="widget-header h-clearfix">
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Announcement</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+
+	<div class="widget-content">
+		
+			
+				No announcement yet.
+				
+			
+				
+	</div>
+</div>
+	<!-- *** END WIDGET widgetid:37, widgetinstanceid:143, template:widget_announcement *** -->
+
+	<!-- *** START WIDGET widgetid:57, widgetinstanceid:144, template:widget_pagetitle *** -->
+	
+	
+
+
+	
+	
+
+
+
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border" id="widget_144" data-widget-id="57" data-widget-instance-id="144">
+	
+	<div class="widget-header h-clearfix">
+		
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Using Connect With Docker</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+
+
+	
+	
+
+		
+		
+		
+
+		
+
+		<div class="b-post__article-meta-wrapper js-update-article-title-info hide-on-editmode">
+
+			
+			
+
+	<ul class="b-post__article-meta h-margin-bottom-l">
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+
+				
+				
+				
+					
+					
+					
+						
+						
+					
+				
+
+				
+				
+					Created by: <img class="avatar" src="../core/images/default/default_avatar_large.png" alt="" /> <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+
+			</li>
+		
+
+		
+		
+			
+			
+			
+			
+			
+				<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+					Published: 07-28-2020, 09:24 AM
+				</li>
+			
+		
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+				
+					5929 views
+				
+			</li>
+		
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--inline">
+				
+				
+					3 comments
+				
+			</li>
+		
+
+		
+		
+			<li class="b-post__article-meta-item b-post__article-meta-item--sharing-menu-container b-post__article-meta-item--inline">
+				
+
+
+
+
+
+
+
+
+
+	
+
+
+<ul class="b-sharing-menu js-sharing-menu js-comp-menu-horizontal js-comp-menu--dropdown-on-small b-sharing-menu--horizontal b-post__hide-when-deleted" data-dropdown-trigger-phrase="share" data-dropdown-icon-classes="b-icon b-icon__share" data-dropdown-content-classes="b-sharing-menu--dropdown" data-dropdown-menu-classes="b-sharing-menu--inline-on-small">
+
+	
+		<li class="b-sharing-menu__item">
+			
+			<a class="js-fb-share-dialog b-sharing-menu__item-link b-sharing-menu__item-link--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fforums.mirthproject.io%2Farticles%2F175025-using-connect-with-docker%23post175025" data-url-not-encoded="https://forums.mirthproject.io/articles/175025-using-connect-with-docker#post175025" target="_blank">
+				<svg class="b-sharing-menu__item-link-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" color="#ffffff">
+					<path fill="#ffffff" fill-rule="evenodd" d="M8 14H3.667C2.733 13.9 2 13.167 2 12.233V3.667A1.65 1.65 0 0 1 3.667 2h8.666A1.65 1.65 0 0 1 14 3.667v8.566c0 .934-.733 1.667-1.667 1.767H10v-3.967h1.3l.7-2.066h-2V6.933c0-.466.167-.9.867-.9H12v-1.8c.033 0-.933-.266-1.533-.266-1.267 0-2.434.7-2.467 2.133v1.867H6v2.066h2V14z"></path>
+				</svg>
+				Share
+			</a>
+		</li>
+	
+
+	
+		<li class="b-sharing-menu__item b-sharing-menu__item--twitter">
+			
+			
+			<a class="js-twitter-share b-sharing-menu__item-link b-sharing-menu__item-link--twitter" href="https://twitter.com/intent/tweet?text=Using+Connect+With+Docker&amp;url=https%3A%2F%2Fforums.mirthproject.io%2Farticles%2F175025-using-connect-with-docker%23post175025" target="_blank">
+				<img class="b-sharing-menu__item-link-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2072%2072%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h72v72H0z%22%2F%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23fff%22%20d%3D%22M68.812%2015.14c-2.348%201.04-4.87%201.744-7.52%202.06%202.704-1.62%204.78-4.186%205.757-7.243-2.53%201.5-5.33%202.592-8.314%203.176C56.35%2010.59%2052.948%209%2049.182%209c-7.23%200-13.092%205.86-13.092%2013.093%200%201.026.118%202.02.338%202.98C25.543%2024.527%2015.9%2019.318%209.44%2011.396c-1.125%201.936-1.77%204.184-1.77%206.58%200%204.543%202.312%208.552%205.824%2010.9-2.146-.07-4.165-.658-5.93-1.64-.002.056-.002.11-.002.163%200%206.345%204.513%2011.638%2010.504%2012.84-1.1.298-2.256.457-3.45.457-.845%200-1.666-.078-2.464-.23%201.667%205.2%206.5%208.985%2012.23%209.09-4.482%203.51-10.13%205.605-16.26%205.605-1.055%200-2.096-.06-3.122-.184%205.794%203.717%2012.676%205.882%2020.067%205.882%2024.083%200%2037.25-19.95%2037.25-37.25%200-.565-.013-1.133-.038-1.693%202.558-1.847%204.778-4.15%206.532-6.774z%22%2F%3E%3C%2Fsvg%3E" />
+				Tweet
+			</a>
+		</li>
+	
+
+	
+
+</ul>
+			</li>
+		
+
+	</ul>
+
+		</div>
+	
+
+</div>
+	<!-- *** END WIDGET widgetid:57, widgetinstanceid:144, template:widget_pagetitle *** -->
+
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row has-columns l-row__fixed--right">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+		
+		
+			
+		
+	
+
+
+
+	
+		
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+<!-- section 0 -->
+
+
+
+<div class="canvas-widget-list section-0 js-sectiontype-primary h-clearfix l-col__flex-6 l-col__small--full l-col--flex-first has-adjacent-right-col l-wide-column">
+
+	
+		<div class="l-col__flex-content">
+	
+
+	
+	<!-- *** START WIDGET widgetid:64, widgetinstanceid:145, template:widget_articledisplay *** -->
+	
+
+
+
+
+
+	
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+
+	
+	
+
+	
+
+		
+		
+
+		
+
+			
+			
+
+			
+			
+
+			
+			
+
+			
+				
+			
+
+			
+
+			
+
+			
+			
+				
+			
+
+			
+			
+			
+			
+			
+			
+
+			
+
+			
+			
+			
+
+			
+			
+			
+
+			
+			
+
+			
+			
+				
+					
+					
+					
+				
+				
+			
+				
+					
+					
+					
+				
+				
+			
+				
+					
+					
+					
+				
+				
+			
+				
+					
+					
+					
+				
+				
+			
+
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+
+			
+			
+			
+			
+			
+			
+
+		
+	
+
+	
+	
+
+	
+	
+		
+	
+
+	<div class="b-module canvas-widget default-widget conversation-content-widget blog-conversation-content-widget widget-no-border widget-no-header-buttons  axd-container" id="widget_145" data-widget-id="64" data-widget-instance-id="145" data-widget-default-tab="">
+		
+			<div class="conversation-status-messages">
+				
+				
+				
+				<div class="conversation-status-message notice h-hide"><span></span><div class="close">X</div></div>
+			</div>
+
+			<div class="widget-header h-clearfix">
+				<div class="module-title h-left main-header-title">
+					
+				</div>
+				<div class="module-buttons">
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				</div>
+				
+				
+				<div class="conversation-controls h-right h-clear hide-on-editmode b-button-group h-margin-bottom-l js-movable-toolbar-button-container">
+					
+				</div>
+			</div>
+			<div class="widget-content tab widget-tabs-panel">
+				<input type="hidden" name="canmoderate" id="canmoderate" value="0" />
+
+				<div id="stream-view-tab" class="conversation-view conversation-stream-view">
+
+					
+					
+
+					
+
+
+	
+		
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+<div class="conversation-toolbar-wrapper  top h-clear hide-on-editmode
+	
+		scrolltofixed-floating
+		scrolltofixed-top
+	
+" data-allow-history="0">
+	<div class="conversation-toolbar">
+
+
+		
+
+		
+
+			<ul class="toolset-left js-shrink-event-parent ">
+
+				
+				<li class="conversation-toolbar-height-shim js-shrink-event-child">
+					<div class="b-button">&nbsp;</div>
+				</li>
+
+				
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+				
+				
+
+				<!-- new conversation button -->
+				
+				
+				
+				
+				
+				
+				<!-- /new conversation button -->
+
+				
+				
+
+				
+					
+				
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+
+				
+				
+					<li class="js-shrink-event-child">
+						<b></b>
+					</li>
+				
+
+			</ul>
+		
+		
+
+		
+
+		<ul class="toolset-right js-shrink-event-parent">
+
+			
+
+			
+			
+				
+			
+
+			
+			
+
+			
+
+			
+
+			
+		</ul>
+	</div>
+
+
+	
+
+	
+</div>
+
+
+
+
+					<div class="conversation-content">
+						<ul class="conversation-list list-container h-clearfix article-list stream-view stream-view-full-width">
+
+							
+							
+							
+
+							
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+
+							
+							
+
+							
+								
+									
+									
+								
+								
+									<!-- Starter Conversation -->
+									
+									
+
+
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+<li data-node-id="175025"
+	data-node-publishdate="1595957040" 
+	class="b-post js-post js-comment-entry__parent list-item list-item-text h-left h-clear conversation-starter js-conversation-starter" itemscope itemtype="http://schema.org/Article">
+
+	
+		
+
+		
+			
+			
+			<meta  itemprop="name" content="Using Connect With Docker" />
+		
+
+		
+		
+		<meta  itemprop="url" content="https://forums.mirthproject.io/articles/175025-using-connect-with-docker" />
+	
+
+	<a id="post175025" class="anchor"></a>
+
+	
+
+	<div class="b-post__hide-when-deleted">
+		<hr class="b-divider--section">
+
+		
+		<!-- end list item header -->
+
+		
+		
+			
+		
+
+		<div class="js-post__content-wrapper list-item-body-wrapper h-clear" data-node-type="starter">
+			<div class="js-post__content list-item-body conversation-body">
+
+				
+					<div class="axd axd_first-post">
+						
+						
+						
+					</div>
+				
+
+				
+					<h2 class="b-post__stream-post-title js-post-title h-hide">Using Connect With Docker</h2>
+					
+					<div class="post-content restore js-post__content-text h-wordwrap" itemprop="text">
+						
+							
+						
+						
+						<div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	ArticleConnectDocker_Title.png Views:	0 Size:	56.6 KB ID:	175026" title="ArticleConnectDocker_Title.png" data-attachmentid="175026" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175026&amp;d=1595519909" data-fullsize-url="filedata/fetch?id=175026&amp;d=1595519909" data-thumb-url="filedata/fetch?id=175026&amp;d=1595519909&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="ArticleConnectDocker_Title.png" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+<br />
+<br />
+​We’re proud to announce that NextGen Connect is now available for use on <a href="https://hub.docker.com/r/nextgenhealthcare/connect" target="_blank">Docker Hub!</a><br />
+<br />
+In the past, NextGen Connect has been available to install and run locally in Windows, Linux, Mac OSX, and our hard and soft Appliance solutions. The developers at NextGen evaluate and use a variety of tools when updating, testing, and debugging Connect. We’ve actually been using Docker for testing Connect for about a year and have found it very convenient and we hope others will too.<br />
+<br />
+<span style="font-size:20px"><b>So What is Docker?</b></span><br />
+<br />
+Docker is a platform allowing users to quickly spin up an application in an isolated container. <div align="center"><br />
+
+
+
+
+
+<div class="videocontainer with-aspect-ratio">
+	
+
+	
+		<a class="video-frame" href="https://youtu.be/pGYAg7TMmp0" data-vcode="pGYAg7TMmp0" data-vprovider="youtube_share" data-height="0" data-width="0">
+		
+		<div class="videothumbnail" style="">
+			
+				<img src="https://img.youtube.com/vi/pGYAg7TMmp0/hqdefault.jpg" alt=""
+					
+					
+				/>
+			
+			<div class="videothumbnailoverlay"></div>
+		</div>
+	
+	</a>
+</div></div> <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-size:20px"><b>Getting Started</b></span><br />
+<br />
+The first thing you’ll need to do is head over to <a href="https://www.docker.com/" target="_blank">Docker</a> and download the application for your particular OS.<br />
+<br />
+Once Docker is installed and running, pull down the latest NextGen Connect Docker image with:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker pull nextgenhealthcare/connect</pre>
+</div>Once that succeeds, you can run the following to view a list of your Docker images:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker images</pre>
+</div>You should see an image with repository <code>nextgenhealthcare/connect</code> and tag 'latest'.<br />
+<br />
+Finally, you can start a Connect container by simply running:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker run --name connect -d -p 8443:8443 nextgenhealthcare/connect</pre>
+</div><ul><li><code>--name connect</code> names your container <code>connect</code></li>
+<li><code>-d</code> runs your container in the background</li>
+<li><code>-p 8443:8443</code> maps your OS port 8443 to the container's port 8443</li>
+<li><code>nextgenhealthcare/connect</code> tells docker what image to use, in this case the latest image, when creating your container</li>
+</ul>At this point Connect is running and you can interact with it as you normally would (example: open a browser with <a href="https://localhost:8443" target="_blank">https://localhost:8443</a>). It’s important to note that only port 8443 has been mapped to the host OS so sending a message to a channel you’ve deployed on Connect running in this container will fail until you map ports for your channels.<br />
+<br />
+You can check the status of this container with:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker ps -a</pre>
+</div>And you can check the server logs with:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker logs connect</pre>
+</div>When you are done, you can stop and remove the container with:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker stop connect
+docker rm connect</pre>
+</div>Please note the following when starting, stopping, and removing a simple Connect container running on the embedded Derby database: When the Connect container is removed, so is your database, which includes all of your channels and messages. Head to the &quot;Docker Volumes&quot; section to learn about persisting the data.<br />
+<br />
+<span style="font-size:20px"><b>Configuring Connect Docker</b></span><br />
+<br />
+  <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	ArticleConnectDocker_Switches.jpg Views:	0 Size:	115.8 KB ID:	175041" title="ArticleConnectDocker_Switches.jpg" data-attachmentid="175041" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175041&amp;d=1595614304" data-fullsize-url="filedata/fetch?id=175041&amp;d=1595614304" data-thumb-url="filedata/fetch?id=175041&amp;d=1595614304&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="ArticleConnectDocker_Switches.jpg" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+<br />
+<br />
+So now you are asking yourself, well that’s all well and good, but how do I use a different database? And how do I set my keystore password? Or even change the VM options? We’ve designed Connect Docker so that it can be configured in several ways. The first is by use of environment variables.<br />
+<br />
+<span style="font-size:16px"><b>Environment Variables</b></span><br />
+<br />
+Our Docker images natively support the following environment variables:<ol class="decimal"><li>DATABASE<ul><li>The type of database to use for Connect’s backend (ex: <code>derby</code>, <code>postgres</code>, <code>mysql</code>, <code>oracle</code>, <code>sqlserver</code>)</li>
+</ul></li>
+<li>DATABASE_URL<ul><li>The JDBC URL to use when connecting to the database (ex: <code>jdbc:postgresql://localhost:5432/mirthdb</code>)</li>
+</ul></li>
+<li>DATABASE_USERNAME<ul><li>The username to use when connecting to the database</li>
+</ul></li>
+<li>DATABASE_PASSWORD<ul><li>The password to use when connecting to the database</li>
+</ul></li>
+<li>DATABASE_MAX_CONNECTIONS<ul><li>The maximum number of connections allowed for the main read/write connection pool</li>
+</ul></li>
+<li>KEYSTORE_STOREPASS<ul><li>The password for the keystore file itself</li>
+</ul></li>
+<li>KEYSTORE_KEYPASS<ul><li>The password for the keys within the keystore, including the server certificate and the secret encryption key</li>
+</ul></li>
+<li>SESSION_STORE<ul><li>If set to true, the web server sessions are stored in the database. This can be useful in situations where you have multiple Connect servers (connecting to the same database) clustered behind a load balancer</li>
+</ul></li>
+<li>VMOPTIONS<ul><li>A comma-separated list of JVM command-line options to place in the .vmoptions file</li>
+</ul></li>
+<li>DELAY<ul><li>This tells the entrypoint script to wait for a certain amount of time (in seconds). The entrypoint script will automatically use a command-line SQL client to check connectivity and wait until the database is up before starting Connect, but only when using PostgreSQL or MySQL. If you are using Oracle or SQL Server and the database is being started up at the same time as Connect, you may want to use this option to tell Connect to wait a bit to allow the database time to startup</li>
+</ul></li>
+</ol>To start a Connect container using one or more environment variables you use the -e parameter. For instance, to specify what type of database to use and set a VM option you could do the following:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker run --name connect -e DATABASE='derby' -e VMOPTIONS='-Xmx512m' -p 8443:8443 nextgenhealthcare/connect</pre>
+</div>Most of the environment variables offer an easy way to get custom properties into Connect server’s mirth.properties file. As you may know, there are a ton of optional properties that can go into this file (For a full list, search the <a href="https://www.nextgen.com/-/media/Files/nextgen-connect/nextgen-connect-39-user-guide.pdf" target="_blank">User Guide</a> for “mirth.properties”), so how do you configure all of the others? We added a system that allows you to add any arbitrary property. To do this you would use a special environment variable syntax where you start with <code>_MP_</code> then replace <code>-</code> with <code>_</code> then replace <code>.</code> with <code>__</code>. Here’s an example of how to add the property <code>database-readonly.max-connections = 25</code>:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker run --name connect -e _MP_DATABASE__READONLY_MAX__CONNECTIONS='25' -p 8443:8443 nextgenhealthcare/connect</pre>
+</div>Adding all of your environment variables as command line arguments can get pretty tedious and verbose but Docker supports loading environment variables from a file.<br />
+<br />
+Here’s an example file (be sure to substitute <code>serverip</code> with the correct IP):<br />
+<br />
+<code><b><b>myenvfile.txt</b></b></code><br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">DATABASE=postgres
+DATABASE_URL=jdbc:postgresql://serverip:5432/mirthdb
+DATABASE_USERNAME=postgres
+DATABASE_PASSWORD=postgres
+KEYSTORE_STOREPASS=changeme
+KEYSTORE_KEYPASS=changeme
+VMOPTIONS=-Xmx512m</pre>
+</div>And Docker using the file:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker run --env-file=myenvfile.txt -p 8443:8443 nextgenhealthcare/connect</pre>
+</div><span style="font-size:16px"><b>Docker Secrets</b></span><br />
+<br />
+  <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	ArticleConnectDocker_Secret.jpg Views:	0 Size:	182.9 KB ID:	175106" title="ArticleConnectDocker_Secret.jpg" data-attachmentid="175106" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175106&amp;d=1595886034" data-fullsize-url="filedata/fetch?id=175106&amp;d=1595886034" data-thumb-url="filedata/fetch?id=175106&amp;d=1595886034&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="ArticleConnectDocker_Secret.jpg" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+<br />
+<br />
+You may have noticed that we are passing usernames and passwords as Docker parameters in the command line. There is a more secure way of doing this using Docker Secrets. Docker Secrets are encrypted during transit and at rest in a Docker Swarm and Secrets are only accessible to services that have been granted explicit access and only while running. Docker secrets can be used in Docker Swarm, Docker Compose, and Docker Stack. The Connect Docker images support the two secret names: <code>mirth_properties</code> and <code>mcserver_vmoptions</code>. Properties in the <code>mirth_properties</code> secret will be merged into the container’s <code>mirth.properties</code> file and VM options in the <code>mcserver_vmoptions</code> secret will be added to the container’s <code>mcserver.vmoptions</code> file. The following example shows how to use Docker Compose to bring up Connect with a <code>mirth_properties</code> secret.<br />
+<br />
+First create a secret file:<br />
+<br />
+<code><b><b>secret.properties</b></b></code><br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">keystore.storepass=changeme
+keystore.keypass=changeme</pre>
+</div>Now define your stack in a YAML file (be sure to edit the path to the secret.properties file on your file system):<br />
+<br />
+<code><b><b>mirth_stack.yml</b></b></code><br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">version: '3.1'
+services:
+  mc:
+    image: nextgenhealthcare/connect
+    container_name: connect
+    secrets:
+      - mirth_properties
+    ports:
+      - 8080:8080/tcp
+      - 8443:8443/tcp
+secrets:
+  mirth_properties:
+    file: /local/path/to/secret.properties</pre>
+</div>With your two files created you can now use Docker Compose to deploy:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker-compose -f mirth_stack.yml -d up</pre>
+</div>Once Connect has started in the container you can see that the secret properties have been merged by running:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker exec -it connect cat conf/mirth.properties</pre>
+</div>To bring down the stack:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker-compose -f mirth_stack.yml down</pre>
+</div><br />
+<span style="font-size:20px"><b>Docker Volumes</b></span><br />
+<br />
+  <div class="img_align_center_wrapper"><img alt="Click image for larger version  Name:	ArticleConnectDocker_Volume.jpg Views:	0 Size:	64.0 KB ID:	175045" title="ArticleConnectDocker_Volume.jpg" data-attachmentid="175045" data-align="center" data-size="full" border="0" src="../filedata/fetch@id=175045&amp;d=1595620670" data-fullsize-url="filedata/fetch?id=175045&amp;d=1595620670" data-thumb-url="filedata/fetch?id=175045&amp;d=1595620670&amp;type=thumb" data-title="Click on the image to see the original version" data-caption="ArticleConnectDocker_Volume.jpg" class="bbcode-attachment align_center js-lightbox bbcode-attachment--lightbox" /></div><br />
+ <br />
+<br />
+<br />
+Docker volumes give users an easy way to transfer data to and from a Docker container and the host OS.<br />
+<br />
+<span style="font-size:16px"><b>Persisting Data with Volumes</b></span><br />
+<br />
+Specifying a volume links a local folder on your machine with a folder inside of the container. The Docker container can read and write to that local folder and the folder continues to exist outside of Docker. This example shows how to mount Connect’s <code>appdata</code> folder:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker run -v /local/path/to/appdata:/opt/connect/appdata -p 8443:8443 nextgenhealthcare/connect</pre>
+</div>Now, with the <code>appdata</code> folder mounted, anything that Connect writes to the folder (The Derby database and Java keystore) will show up in your local <code>appdata</code> folder and you can remove your container without losing your data. This also makes updating Connect to a new version a snap. Just stop your container, remove it, and spin up a new one pointing at the same local <code>appdata</code> folder.<br />
+<br />
+<span style="font-size:16px"><b>Adding Custom Extensions with Volumes</b></span><br />
+<br />
+Connect power users will know that NextGen Connect has a plugin system allowing users to extend and add new functionality to the application. One of the official free extensions is for FHIR (Fast Healthcare Interoperability Resources) which adds source and destination connectors for the FHIR spec. NextGen has many other useful plugins available for its customers as well. Normally, to install an extension you would either stop the connect server, unzip the archive into the <code>extensions</code> folder, and restart it or use the Connect Administrator to upload your zip to the Connect server and restart it. With Connect running inside a Docker container with a separate and ephemeral file system, extensions must be installed differently. But, with Connect supporting an extension volume, it’s really easy!<br />
+<br />
+Create a folder on your local filesystem and drop your extension archives into that folder.<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">/local/path/to/custom-extensions
+.
+└── local
+    └── path
+        └── to
+            └── custom-extensions
+                ├── fhir.zip
+                └── ssl.zip</pre>
+</div>Then, when you start connect, be sure to mount that folder to the <code>custom-extensions</code> volume as part of Docker’s parameters. When the container starts up it will extract the archives into Connect’s <code>extensions</code> folder before starting the server, thus ensuring the extensions are installed:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker run -v /local/path/to/custom-extensions:/opt/connect/custom-extensions -p 8443:8443 nextgenhealthcare/connect</pre>
+</div><span style="font-size:20px"><b>Using Docker to Start Connect and a PostgreSQL Database</b></span><br />
+<br />
+If you have made it this far then you are already familiar with Docker Volumes, Docker Compose, Docker Secrets, and Docker Environment Variables. This last section will bring all of those together as well as bring a new database into the mix. Here we will compose NextGen Connect, PostgreSQL, some volumes, and secrets.<br />
+<br />
+First create a secret for Connect’s secret properties:<br />
+<br />
+<code><b><b>secret.properties</b></b></code><br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">database.username=mirthuser
+database.password=mirthpassword
+keystore.storepass=docker_storepass
+keystore.keypass=docker_keypass</pre>
+</div>Next create two secret files for PostgreSQL’s secrets:<br />
+<br />
+<code><b><b>pgsql_user.txt</b></b></code><br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">mirthuser</pre>
+</div><code><b><b>pgsql_pw.txt</b></b></code><br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">mirthpassword</pre>
+</div>Then create the compose file (again, don’t forget to edit the file locations of the secret files and volumes for your local filesystem):<br />
+<br />
+<code><b><b>mirth_uber_stack.yml</b></b></code><br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">version: '3.1'
+services:
+  mc:
+    image: nextgenhealthcare/connect
+    container_name: connect
+    environment:
+      - DATABASE=postgres
+      - DATABASE_URL=jdbc:postgresql://db:5432/mirthdb
+      - DATABASE_MAX_CONNECTIONS=20
+      - VMOPTIONS=-Xmx512m
+    secrets:
+      - mirth_properties
+    volumes:
+      - /local/path/to/appdata:/opt/connect/appdata
+    ports:
+      - 8080:8080/tcp
+      - 8443:8443/tcp
+    depends_on:
+      - db
+  db:
+    image: postgres
+    container_name: pgsql
+    environment:
+      - POSTGRES_DB=mirthdb
+      - POSTGRES_USER_FILE=/run/secrets/postgres-user
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres-password
+    secrets:
+      - postgres-user
+      - postgres-password
+    volumes:
+      - /local/path/to/pgsql_volume:/var/lib/postgresql/data
+    expose:
+      - 5432
+secrets:
+  mirth_properties:
+    file: /local/path/to/secret.properties
+  postgres-user:
+    file: /local/path/to/pgsql_user.txt
+  postgres-password:
+    file: /local/path/to/pgsql_pw.txt</pre>
+</div>Now we have everything we need to bring up the containers:<br />
+<br />
+
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	
+	<pre class="bbcode_code" style="max-height:calc(30 * 1.4rem + 12px + 20px);">docker-compose -f mirth_uber_stack.yml up -d</pre>
+</div>You should see two containers running <code>connect</code> and <code>pgsql</code>.<br />
+<br />
+<span style="font-size:20px"><b>Further Discussion</b></span><br />
+<br />
+Check out the <a href="https://github.com/nextgenhealthcare/connect-docker" target="_blank">Connect Docker GitHub repository</a> to see more examples of interesting ways to use our Docker images or to discuss feature requests.<br />
+<br />
+<span style="font-size:20px"><b>Conclusion</b></span><br />
+<br />
+Let us know what you think about Connect Docker. Does it make your life easier? Are you using it in production? Is there something you wish it did that it isn’t yet? Leave us a comment!
+					</div>
+					
+					
+	
+	
+	
+	
+	
+	<div class="b-post__edit h-margin-vert-l">
+		
+		
+			Last edited by <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>; <span class="time">04-22-2022, 04:29 PM</span>.
+		
+		
+
+	</div>
+
+				
+			</div>
+
+			
+				
+
+
+
+
+
+
+
+
+			
+
+			
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+				
+				
+				
+				
+				
+
+				
+
+				
+
+				
+
+				
+
+
+				
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+
+	<div class="h-clearfix">
+		
+			<div class="h-margin-bottom-xl h-margin-top-none h-text-size--11" id="content-tags-175025">
+
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+		<strong>Tags:</strong>
+	
+
+	
+		
+		
+		
+
+		
+		
+			
+			
+			
+			
+			<span class="js-content-tag">
+				<a href="../search@searchJSON={%2522tag%2522%253A[%2522docker%2522]}.html">docker</a>
+			</span>
+		
+
+		
+		<meta  itemprop="keywords" content="docker " />
+	
+</div>
+		
+
+		
+			<hr class="b-divider b-divider--post-controls" />
+		
+
+		<ul class="h-left js-post-info">
+
+			
+			
+
+			
+
+			
+			<li class="h-margin-top-xs h-flex-valign-center">
+
+
+<div class="reactions reactions__footer-container">
+	<div class="reactions__topic-reactions-container js-topic-reactions-list" data-nodeid="175025">
+		
+			
+			<div class="reactions__topic-reaction js-reactions-toggle-vote"
+				data-ivoted="0"
+				data-votetypeid="6"
+				data-nodeid="175025"
+			>
+				<span class="reactions__emoji">&#X1F44D</span>
+				<span class="reactions__topic-reaction--count js-reactions-count">4</span>
+			</div>
+		
+	</div>
+	
+	
+</div>
+
+			
+		</ul>
+
+		<ul class="h-margin-top-s h-right js-post-controls b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive" data-node-id="175025" data-dropdown-icon-classes="b-icon b-icon__ellipsis" data-dropdown-content-classes="b-comp-menu-dropdown__content--right">
+			
+
+			
+
+			
+
+			
+
+				
+
+					
+
+				
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</ul>
+
+
+	</div>
+</div>
+
+
+
+
+				<div class="edit-conversation-container OLD__edit-conversation-container"></div>
+
+				
+
+					
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+<div class="b-comments js-comments   b-comments--article js-comments--article h-margin-bottom-xl h-clearfix">
+
+	
+		
+			
+			
+			
+				
+			
+
+
+
+
+			<div class="b-comments__header js-comments__header b-media h-padding-vert-m h-padding-horiz-l">
+				<div class="b-media__img--rev js-comments__pagination h-hide">
+					<label>
+						 
+							
+							
+							
+								
+							
+							
+							
+								1 - 3
+							
+						
+					</label>
+					<span class="b-comments__pagination--up js-comments__page--prev h-margin-left-s  h-hide-imp" title="See previous comments"><span class="b-icon b-icon__arrow-up-m"></span></span>
+				</div>
+				<div class="js-comments__total h-margin-left-l b-media__body">
+					<span class="b-icon b-icon__speech-single h-margin-right-s"></span>
+					<label class="js-comments__total-text h-align-top">
+						
+							3 comments
+						
+					</label>
+				</div>
+			</div>
+
+
+
+
+			
+
+
+			
+			
+			
+			
+
+
+			<ul class="b-comments__comments js-comments__comments h-left" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+				
+				
+				
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+				
+
+				
+					
+						
+					
+
+					
+
+
+					<li data-node-id="181600" class="b-post b-comment js-comment js-post js-comment-entry__parent h-left h-clear  b-comment--article  ">
+	<a id="post181600" class="anchor"></a>
+
+	
+
+	<div>
+		<hr class="b-divider--section" />
+
+		<div class="b-media h-margin-bottom-l">
+			
+				<div class="b-media__img b-post__hide-when-deleted">
+					
+						<a href="../member/111986-danhoward.html" class="b-avatar x-small h-left h-margin-right-l"><img src="../core/images/default/default_avatar_thumb.png" alt="DanHoward" /></a>
+					
+				</div>
+			
+
+			<div class="b-media__img--rev">
+				<div class="comment-count">
+					
+					
+					
+					
+					
+						<a class="b-post__count js-show-post-link" href="175025-using-connect-with-docker@p=181600.html#post181600">#<span>1</span></a>
+					
+	
+					
+
+
+
+				</div>
+			</div>
+
+			<div class="b-media__body">
+				<div class="h-margin-bottom-xs b-post__hide-when-deleted">
+					
+					
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	<a href="../member/111986-danhoward.html"
+		class="b-comment__author" 
+		data-vbnamecard="111986">DanHoward</a>
+
+					<span>commented</span>
+				</div>
+				<div class="b-post__timestamp">06-23-2022, 07:59 AM</div>
+				<div class="b-comment__edit-header  b-post__hide-when-deleted"><strong>Editing a comment</strong></div>
+			</div>
+		</div>
+		<div class="b-post__hide-when-deleted">
+			
+			<div class="OLD__post-content js-post__content h-clear h-wordwrap" itemprop="commentText">
+				
+				
+				How would I compose docker including adding the channels and configuration properties?
+			</div>
+
+			
+
+			
+			
+			
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+
+	<div class="h-clearfix">
+		
+
+		
+			<hr class="b-divider b-divider--post-controls" />
+		
+
+		<ul class="h-left js-post-info">
+
+			
+			
+
+			
+
+			
+			<li class="h-margin-top-xs h-flex-valign-center">
+
+
+<div class="reactions reactions__footer-container">
+	<div class="reactions__topic-reactions-container js-topic-reactions-list" data-nodeid="181600">
+		
+	</div>
+	
+	
+</div>
+
+			
+		</ul>
+
+		<ul class="h-margin-top-s h-right js-post-controls b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive" data-node-id="181600" data-dropdown-icon-classes="b-icon b-icon__ellipsis" data-dropdown-content-classes="b-comp-menu-dropdown__content--right">
+			
+
+			
+
+			
+
+			
+
+				
+
+					
+
+				
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</ul>
+
+
+	</div>
+</div>
+
+
+		</div>
+
+
+
+		<div class="edit-conversation-container"></div>
+	</div>
+</li>
+
+					
+				
+					
+						
+					
+
+					
+
+
+					<li data-node-id="182503" class="b-post b-comment js-comment js-post js-comment-entry__parent h-left h-clear  b-comment--article  ">
+	<a id="post182503" class="anchor"></a>
+
+	
+
+	<div>
+		<hr class="b-divider--section" />
+
+		<div class="b-media h-margin-bottom-l">
+			
+				<div class="b-media__img b-post__hide-when-deleted">
+					
+						<a href="../member/112730-neil.html" class="b-avatar x-small h-left h-margin-right-l"><img src="../core/images/default/default_avatar_thumb.png" alt="neil" /></a>
+					
+				</div>
+			
+
+			<div class="b-media__img--rev">
+				<div class="comment-count">
+					
+					
+					
+					
+					
+						<a class="b-post__count js-show-post-link" href="175025-using-connect-with-docker@p=182503.html#post182503">#<span>2</span></a>
+					
+	
+					
+
+
+
+				</div>
+			</div>
+
+			<div class="b-media__body">
+				<div class="h-margin-bottom-xs b-post__hide-when-deleted">
+					
+					
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	<a href="../member/112730-neil.html"
+		class="b-comment__author" 
+		data-vbnamecard="112730">neil</a>
+
+					<span>commented</span>
+				</div>
+				<div class="b-post__timestamp">11-10-2022, 08:52 AM</div>
+				<div class="b-comment__edit-header  b-post__hide-when-deleted"><strong>Editing a comment</strong></div>
+			</div>
+		</div>
+		<div class="b-post__hide-when-deleted">
+			
+			<div class="OLD__post-content js-post__content h-clear h-wordwrap" itemprop="commentText">
+				
+				
+				I have what I believe a similar issue, though my channels persist between restarts as they are stored in the connected database.<br />
+I understand configuration variables can also be stored in the database but I have yet to explore this.<br />
+<br />
+I also need to persist changes in the jre cacerts file to allow SSL connectivity.<br />
+<br />
+It may be possible to get around both issues (cacert and configuration variables) if the relevant files can be 'mounted' ahead of the mcservice starting. (<a href="https://github.com/nextgenhealthcare/connect-docker#using-volumes?" target="_blank">https://github.com/nextgenhealthcare...using-volumes?</a>)<br />
+<br />
+Alas my devopsy skills are not anywhere near guru level so I don't know if this either possible or desirable.<br />
+<br />
+Can anyone point Dan or I at relevant resources / examples?
+			</div>
+
+			
+
+			
+			
+			
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+
+	<div class="h-clearfix">
+		
+
+		
+			<hr class="b-divider b-divider--post-controls" />
+		
+
+		<ul class="h-left js-post-info">
+
+			
+			
+
+			
+
+			
+			<li class="h-margin-top-xs h-flex-valign-center">
+
+
+<div class="reactions reactions__footer-container">
+	<div class="reactions__topic-reactions-container js-topic-reactions-list" data-nodeid="182503">
+		
+	</div>
+	
+	
+</div>
+
+			
+		</ul>
+
+		<ul class="h-margin-top-s h-right js-post-controls b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive" data-node-id="182503" data-dropdown-icon-classes="b-icon b-icon__ellipsis" data-dropdown-content-classes="b-comp-menu-dropdown__content--right">
+			
+
+			
+
+			
+
+			
+
+				
+
+					
+
+				
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</ul>
+
+
+	</div>
+</div>
+
+
+		</div>
+
+
+
+		<div class="edit-conversation-container"></div>
+	</div>
+</li>
+
+					
+				
+					
+						
+					
+
+					
+
+
+					<li data-node-id="182583" class="b-post b-comment js-comment js-post js-comment-entry__parent h-left h-clear  b-comment--article  ">
+	<a id="post182583" class="anchor"></a>
+
+	
+
+	<div>
+		<hr class="b-divider--section" />
+
+		<div class="b-media h-margin-bottom-l">
+			
+				<div class="b-media__img b-post__hide-when-deleted">
+					
+						<a href="../member/436-jbartels.html" class="b-avatar x-small h-left h-margin-right-l"><img src="../core/images/default/default_avatar_thumb.png" alt="jbartels" /></a>
+					
+				</div>
+			
+
+			<div class="b-media__img--rev">
+				<div class="comment-count">
+					
+					
+					
+					
+					
+						<a class="b-post__count js-show-post-link" href="175025-using-connect-with-docker@p=182583.html#post182583">#<span>3</span></a>
+					
+	
+					
+
+
+
+				</div>
+			</div>
+
+			<div class="b-media__body">
+				<div class="h-margin-bottom-xs b-post__hide-when-deleted">
+					
+					
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	<a href="../member/436-jbartels.html"
+		class="b-comment__author" 
+		data-vbnamecard="436">jbartels</a>
+
+					<span>commented</span>
+				</div>
+				<div class="b-post__timestamp">11-15-2022, 05:16 AM</div>
+				<div class="b-comment__edit-header  b-post__hide-when-deleted"><strong>Editing a comment</strong></div>
+			</div>
+		</div>
+		<div class="b-post__hide-when-deleted">
+			
+			<div class="OLD__post-content js-post__content h-clear h-wordwrap" itemprop="commentText">
+				
+				
+				<a href="../member/112730-neil.html" style="background-image:url('../core/images/default/default_avatar_large.png');" class="b-bbcode-user b-bbcode-user--has-avatar js-bbcode-user" data-userid="112730" data-vbnamecard="112730">neil</a> - Join Slack at <a href="https://github.com/nextgenhealthcare/connect/#1-useful-links" target="_blank">https://github.com/nextgenhealthcare...1-useful-links</a> and ask in #mirth-in-containers .
+			</div>
+
+			
+
+			
+			
+			
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+
+	<div class="h-clearfix">
+		
+
+		
+			<hr class="b-divider b-divider--post-controls" />
+		
+
+		<ul class="h-left js-post-info">
+
+			
+			
+
+			
+
+			
+			<li class="h-margin-top-xs h-flex-valign-center">
+
+
+<div class="reactions reactions__footer-container">
+	<div class="reactions__topic-reactions-container js-topic-reactions-list" data-nodeid="182583">
+		
+	</div>
+	
+	
+</div>
+
+			
+		</ul>
+
+		<ul class="h-margin-top-s h-right js-post-controls b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive" data-node-id="182583" data-dropdown-icon-classes="b-icon b-icon__ellipsis" data-dropdown-content-classes="b-comp-menu-dropdown__content--right">
+			
+
+			
+
+			
+
+			
+
+				
+
+					
+
+				
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</ul>
+
+
+	</div>
+</div>
+
+
+		</div>
+
+
+
+		<div class="edit-conversation-container"></div>
+	</div>
+</li>
+
+					
+				
+
+			</ul>
+
+
+			<div class="b-comments__footer js-comments__footer b-media h-padding-vert-m h-padding-horiz-l h-clear h-hide">
+				<div class="b-media__img--rev js-comments__pagination">
+					<label>
+						
+					</label>
+					<span class="b-comments__pagination--down js-comments__page--next h-margin-left-s" title="See next comments"><span class="b-icon b-icon__arrow-down-m"></span></span>
+				</div>
+			</div>
+
+		
+	
+
+	
+</div>
+				
+
+				
+
+				
+				
+				
+
+				
+				
+				
+					<div class="notice comment-disabled">
+						
+							Posting comments is disabled.
+						
+					</div>
+				
+
+				
+				
+			
+		</div>
+	</div>
+</li>
+								
+								
+							
+								
+									
+									
+								
+								
+								
+							
+								
+									
+									
+								
+								
+								
+							
+								
+									
+									
+								
+								
+								
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+		
+	</div>
+	<script type="text/javascript">
+	(function(){
+	
+		window.vBulletin = window.vBulletin || {};
+		vBulletin.widget = vBulletin.widget || {};
+		vBulletin.conversation = vBulletin.conversation || {};
+	
+		vBulletin.conversation.COMMENTS_PER_PAGE = Number('25') || 25;
+		vBulletin.conversation.POSTS_PER_PAGE = Number('') || 15;
+	})();
+	</script>
+
+
+
+
+
+	<!-- *** END WIDGET widgetid:64, widgetinstanceid:145, template:widget_articledisplay *** -->
+
+
+	
+		</div>
+	
+
+</div>
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+		
+	
+
+
+
+	
+		
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+
+
+
+<!-- section 1 -->
+
+
+
+<div class="canvas-widget-list section-1 js-sectiontype-secondary h-clearfix l-col__fixed-6 l-col__small--full has-adjacent-left-col h-padding-left-16 l-narrow-column">
+
+	
+
+	
+	<!-- *** START WIDGET widgetid:62, widgetinstanceid:146, template:widget_cmschannelnavigation *** -->
+	
+	
+
+
+	
+	
+
+
+<div class="b-module canvas-widget default-widget custom-html-widget" id="widget_146" data-widget-id="62" data-widget-instance-id="146">
+
+	
+	<div class="widget-header h-clearfix">
+		
+			
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Categories</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+		<hr class="widget-header-divider" />
+	
+
+
+	<div class="widget-content">
+
+		 
+		
+			
+		
+		
+
+		
+
+		
+
+		
+		
+
+		
+
+			
+			
+
+			<nav>
+			<ul class="b-channel-nav">
+			
+				
+					
+
+
+	<li class="b-channel-nav__item b-channel-nav__item--selected">
+		<a href="../articles.html">Articles</a>
+		
+		
+	</li>
+
+				
+			
+			</ul>
+			</nav>
+
+		
+
+	</div>
+</div>
+	<!-- *** END WIDGET widgetid:62, widgetinstanceid:146, template:widget_cmschannelnavigation *** -->
+
+	<!-- *** START WIDGET widgetid:63, widgetinstanceid:147, template:widget_tagnavigation *** -->
+	
+	
+
+
+	
+	
+
+
+<div class="b-module canvas-widget default-widget custom-html-widget" id="widget_147" data-widget-id="63" data-widget-instance-id="147">
+
+	
+	<div class="widget-header h-clearfix">
+		
+			
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">article_tags</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+		<hr class="widget-header-divider" />
+	
+
+
+	<div class="widget-content">
+
+		
+		
+
+		
+
+		
+
+		
+		
+			
+			
+		
+
+		
+			
+				<ul class="b-channel-nav">
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522attachments%2522}.html">attachments</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522channel+dev%2522}.html">channel dev</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522docker%2522}.html">docker</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522jms%2522}.html">jms</a>
+							
+								(1)
+							
+						</li>
+					
+						
+						<li class="b-channel-nav__item">
+							
+							<a href="../search@searchJSON={%2522channel%2522%253A%252213%2522,%2522tag%2522%253A%2522rabbitmq%2522}.html">rabbitmq</a>
+							
+								(1)
+							
+						</li>
+					
+				</ul>
+			
+		
+
+	</div>
+</div>
+	<!-- *** END WIDGET widgetid:63, widgetinstanceid:147, template:widget_tagnavigation *** -->
+
+	<!-- *** START WIDGET widgetid:12, widgetinstanceid:148, template:widget_search *** -->
+	
+	
+
+
+	
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+	
+	
+		
+	
+
+	
+
+
+
+
+
+<div class="b-module canvas-widget search-widget" id="widget_148" data-widget-id="12" data-widget-instance-id="148">
+
+	
+	<div class="widget-header h-clearfix">
+		
+		
+			
+		
+
+		<div class="module-title h-left">
+			
+				<h1 class="main-title js-main-title hide-on-editmode">Latest Articles</h1>
+				
+				
+				
+			
+		</div>
+		
+			<div class="module-buttons">
+				
+					<span class="toggle-button module-button-item collapse" title="Collapse" data-toggle-title="Expand"><span class="b-icon b-icon__toggle-collapse">Collapse</span></span>
+				
+			</div>
+		
+	</div>
+	
+		<hr class="widget-header-divider" />
+	
+
+
+	<div class="widget-content">
+		
+			
+				
+				
+				<ul class="conversation-list list-container h-clearfix">
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="181282">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="181282-mirth-connect-rabbitmq-jms-interface@p=183863.html">Mirth Connect RabbitMQ JMS Interface</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		<div align="left"> <br />
+ </div> <br />
+<br />
+There has been some question in the past about adding a RabbitMQ connector to Mirth Connect. While, yes, this could be done, I had wondered if there was a way to interface with RabbitMQ using Connect as is. After doing some digging I found a RabbitMQ JMS client and set out test it. The following is how I tested and what the interface looks like using Connect.<br />
+<br />
+<br />
+<span style="font-size:20px"><b>RabbitMQ Setup</b></span><br />
+<br />
+To avoid having to install and configure RabbitMQ myself, I...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-181282">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">04-22-2022, 02:37 PM</div>
+	
+	</div>
+</li>
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="177082">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="177082-forum-etiquette.html">Forum Etiquette</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/18430-brentm.html" data-vbnamecard="18430">brentm</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		Etiquette when posting to the forum:<ol class="decimal"><li>Double check that any content you post does not contain PHI.</li>
+<li><b>if you have a sales-related question</b>, please contact NextGen at <a href="../cdn-cgi/l/email-protection.html#e7898084888989828493ca94868b8294a789829f93808289c984888a"><span class="__cf_email__" data-cfemail="0f61686c6061616a6c7b227c6e636a7c4f616a777b686a61216c6062">[email&#160;protected]</span></a>.</li>
+<li>READ THE <a href="https://www.nextgen.com/-/media/Files/nextgen-connect/nextgen-connect-310-user-guide.pdf" target="_blank">USER GUIDE</a></li>
+<li>Please don't hijack threads by changing the topic of the original post</li>
+<li>Search this forum and the internet first. Often NOT including Mirth in your internet query may provide more java and javascript results.</li>
+<li>What's your specific goal?</li>
+<li>In general, post detailed information. e.g.</li>
+</ol>...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-177082">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">01-13-2021, 10:56 AM</div>
+	
+	</div>
+</li>
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="175046">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="175046-using-attachments@p=180640.html">Using Attachments</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		<br />
+ <br />
+<br />
+Attachments are a way to optimize how Connect handles large messages.<br />
+<br />
+Using Attachments reduces the amount of data being stored in the database. If you look at a message in the message browser you can see that in the raw, transformed, and encoded tabs there are message blobs being displayed. Each one of those represents an entry in the database. Using message attachments, you can reduce the amount of data being stored substantially since, generally, attachments...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-175046">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">07-24-2020, 04:01 PM</div>
+	
+	</div>
+</li>
+					
+							
+							
+							
+	
+
+
+
+
+<li class="b-post-sm js-post-sm" data-nodeid="175025">
+
+	
+	
+
+	
+	<div class="b-post-sm__content">
+
+		
+		<div class="b-post-sm__title ellipsis">
+			
+			
+				<a href="175025-using-connect-with-docker@p=182583.html">Using Connect With Docker</a>
+			
+		</div>
+
+		
+		
+			<div class="b-post-sm__author">
+				
+					by <a href="../member/29266-cturczynskyj.html" data-vbnamecard="29266">cturczynskyj</a>
+				
+			</div>
+		
+
+
+
+	
+	<div class="b-post-sm__post-content post-content ellipsis restore">
+		
+		<br />
+ <br />
+<br />
+<br />
+​We’re proud to announce that NextGen Connect is now available for use on <a href="https://hub.docker.com/r/nextgenhealthcare/connect" target="_blank">Docker Hub!</a><br />
+<br />
+In the past, NextGen Connect has been available to install and run locally in Windows, Linux, Mac OSX, and our hard and soft Appliance solutions. The developers at NextGen evaluate and use a variety of tools when updating, testing, and debugging Connect. We’ve actually been using Docker for testing Connect for about a year and have found it very convenient and we hope...
+	</div>
+
+
+
+
+	
+		
+		
+
+			
+			
+				<div class="list-item-footer h-clearfix">
+					<ul class="replylike_count h-left">
+						<li id="channel-175025">
+							<div class="channel h-left">
+								<div class="channel_text">
+									Channel: <a href="../articles.html">Articles</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+
+			
+			<div class="b-post-sm__date">07-23-2020, 08:45 AM</div>
+	
+	</div>
+</li>
+					
+				</ul>
+			
+			<div class="widget-footer h-align-left h-clear">
+				
+				<a href="https://forums.mirthproject.io/search?r=14325899" class="b-button">View All</a>
+			</div>
+		
+	</div>
+</div>
+
+
+
+	<!-- *** END WIDGET widgetid:12, widgetinstanceid:148, template:widget_search *** -->
+
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 3 -->
+
+
+
+<div class="canvas-widget-list section-3 js-sectiontype-extra h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+		
+	
+
+
+
+	
+
+
+
+<!-- row -->
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+
+	
+	
+
+	
+
+		
+		
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+<!-- section 201 -->
+
+
+
+<div class="canvas-widget-list section-201 js-sectiontype-global_before_footer h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+
+	
+
+	
+
+	
+
+</div>
+
+	
+
+</div>
+
+	
+
+</div>
+
+</div>
+	<div class="h-clear"></div>
+</main>
+
+	<footer id="footer">
+		
+		
+		<nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent">
+			
+			
+			
+			
+			
+				
+			
+			
+			<ul class="h-left js-footer-chooser-list h-margin-left-xxl js-shrink-event-child">
+				
+				
+					<li>
+
+						<div class="b-comp-menu-dropdown js-comp-menu-dropdown b-comp-menu-dropdown--open-on-hover b-comp-menu-dropdown--direction-up js-languagechooser js-select-on-xsmall h-margin-right-l">
+							<div class="b-comp-menu-dropdown__trigger js-comp-menu-dropdown__trigger b-comp-menu-dropdown__trigger--arrow">
+								
+									
+								
+									
+										English (US)
+									
+								
+									
+								
+									
+								
+							</div>
+							<ul class="b-comp-menu-dropdown__content js-comp-menu-dropdown__content b-comp-menu-dropdown__content--left">
+								
+									<li class="b-comp-menu-dropdown__content-item">
+										<a href="../index.html#" data-languageid="2">Deutsch (Du)</a>
+									</li>
+								
+									<li class="b-comp-menu-dropdown__content-item b-comp-menu-dropdown__content-item--current">
+										<a href="../index.html#" data-languageid="1">English (US)</a>
+									</li>
+								
+									<li class="b-comp-menu-dropdown__content-item">
+										<a href="../index.html#" data-languageid="4">French</a>
+									</li>
+								
+									<li class="b-comp-menu-dropdown__content-item">
+										<a href="../index.html#" data-languageid="3">Spanish</a>
+									</li>
+								
+							</ul>
+						</div>
+
+					</li>
+				
+				
+			</ul>
+
+			<ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal js-comp-menu-horizontal js-comp-menu--dropdown-on-xsmall b-comp-menu-dropdown--inactive js-shrink-event-child" data-dropdown-trigger-phrase="go_to_ellipsis" data-dropdown-menu-classes="h-margin-vert-l b-comp-menu-dropdown--direction-up" data-dropdown-trigger-classes="b-comp-menu-dropdown__trigger--arrow">
+				
+				
+					
+					
+					
+						
+						
+					
+					
+					
+					
+					
+					
+					
+					
+
+					<li class="">
+						<a rel="nofollow" href="../help.html">Help</a>
+					</li>
+
+				
+					
+					
+					
+						
+						
+					
+					
+					
+					
+					
+					
+					
+					
+
+					<li class="">
+						<a rel="nofollow" href="../contact-us.html">Contact Us</a>
+					</li>
+
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+
+					<li class="">
+						<a href="../privacy.html">Privacy</a>
+					</li>
+
+				
+				<li><a href="../index.html#" class="js-footer-go-to-top">Go to top</a></li>
+			</ul>
+		</nav>
+		
+      
+      
+      
+      
+
+      
+    
+
+	</footer>
+</div>
+<div id="footer-copyright">
+	<div id="footer-user-copyright">NextGen Healthcare</div>
+	<div id="footer-vb-copyright">Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">vBulletin&reg;</a> Version 6.0.0 <br />Copyright &copy; 2023 MH Sub I, LLC dba vBulletin. All rights reserved. </div>
+	<div id="footer-current-datetime">All times are GMT-9. This page was generated at 07:30 PM.</div>
+</div>
+</div>
+
+<div id="loading-indicator" class="js-loading-indicator b-ajax-loading-indicator h-hide">
+	<span>Working...</span>
+</div>
+<div class="js-flash-message b-ajax-loading-indicator b-ajax-loading-indicator--medium h-hide">
+	<span class="js-flash-message-content"></span>
+</div>
+<div id="confirm-dialog" class="sb-dialog">
+	<div class="dialog-content h-clearfix">
+		<div class="icon h-left"></div>
+		<div class="message"></div>
+	</div>
+	<div class="b-button-group">
+		<button id="btnConfirmDialogYes" type="button" class="b-button b-button--primary js-button">Yes</button>
+		<button id="btnConfirmDialogNo" type="button" class="b-button b-button--secondary js-button">No</button>
+	</div>
+</div>
+<div id="alert-dialog" class="sb-dialog">
+	<div class="dialog-content h-clearfix">
+		<div class="icon h-left"></div>
+		<div class="message"></div>
+	</div>
+	<div class="b-button-group">
+		<button id="btnAlertDialogOK" type="button" class="b-button b-button--primary js-button">OK</button>
+	</div>
+</div>
+<div id="prompt-dialog" class="sb-dialog">
+	<div class="dialog-content table h-clearfix">
+		<div class="message td"></div>
+		<div class="input-box-container td">
+			<input type="text" class="input-box textbox" />
+			<textarea class="input-box textbox h-hide" rows="3"></textarea>
+		</div>
+	</div>
+	<div class="js-prompt-error h-hide"></div>
+	<div class="b-button-group">
+		<button id="btnPromptDialogOK" type="button" class="b-button b-button--primary js-button">OK</button>
+		<button id="btnPromptDialogCancel" type="button" class="b-button b-button--secondary js-button">Cancel</button>
+	</div>
+</div>
+<div id="slideshow-dialog" class="sb-dialog slideshow">
+	<div class="b-icon b-icon__x-square--gray close-btn">X</div>
+	<div class="slideshow-wrapper"></div>
+	<div class="caption"></div>
+	<div class="thumbnails-wrapper">
+		<div class="thumbnails"></div>
+	</div>
+
+</div>
+
+<div class="unsubscribe-overlay-container"></div>
+
+<div id="fb-root" data-facebook-language="en_US"></div>
+	
+
+<div class="reactions reactions__list-container dialog-container js-reactions-available-list">
+	<div class="reactions__list">
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="1"
+				title="grinning face"
+				alt="grinning face"
+			>
+				<span class="reactions__emoji">&#X1F600</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="2"
+				title="smiling face with hearts"
+				alt="smiling face with hearts"
+			>
+				<span class="reactions__emoji">&#X1F970</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="5"
+				title="nauseated face"
+				alt="nauseated face"
+			>
+				<span class="reactions__emoji">&#X1F922</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="3"
+				title="smiling face with sunglasses"
+				alt="smiling face with sunglasses"
+			>
+				<span class="reactions__emoji">&#X1F60E</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="4"
+				title="enraged face"
+				alt="enraged face"
+			>
+				<span class="reactions__emoji">&#X1F621</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="6"
+				title="thumbs up"
+				alt="thumbs up"
+			>
+				<span class="reactions__emoji">&#X1F44D</span>
+			</div>
+		
+			
+			<div class="reactions__list-item js-reactions-dovote"
+				data-votetypeid="7"
+				title="thumbs down"
+				alt="thumbs down"
+			>
+				<span class="reactions__emoji">&#X1F44E</span>
+			</div>
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="../js/jquery/jquery-3.5.1.min.js"><\/script>');</script>
+
+<script type="text/javascript" src="../js/footer-rollup-600.js"></script>
+
+
+
+<script type="text/javascript">
+	
+		window.vBulletin = window.vBulletin || {};
+	
+		vBulletin.version = '6.0.0';
+</script>
+
+
+
+
+	<div class="b-modal-banner__banner js-privacy-consent-banner__banner h-hide-imp b-modal-banner__banner--center">
+	
+		<p class="b-modal-banner__paragraph">We process personal data about users of our site, through the use of cookies and other technologies, to deliver our services, personalize advertising, and to analyze site activity. We may share certain information about our users with our advertising and analytics partners. For additional details, refer to our <a href="https://www.nextgen.com/legal-notice" target="_blank" class="b-modal-banner__clickable">Privacy Policy</a>.</p>
+
+<p class="b-modal-banner__paragraph">By clicking "<b>I AGREE</b>" below, you agree to our <a href="https://www.nextgen.com/legal-notice" target="_blank" class="b-modal-banner__clickable">Privacy Policy</a> and our personal data processing and cookie practices as described therein. You also acknowledge that this forum may be hosted outside your country and you consent to the collection, storage, and processing of your data in the country where this forum is hosted.</p>
+		<p class="b-modal-banner__paragraph">
+			<a href="../index.html#" class="b-button b-button--primary b-modal-banner__clickable js-privacy-consent-banner__button">I Agree</a>
+		</p>
+	
+</div>
+<div class="b-modal-banner__overlay js-privacy-consent-banner__overlay h-hide-imp"></div>
+	
+
+
+
+<script type="text/javascript" src="../js/login.js@v=600"></script>
+<script type="text/javascript" src="../js/facebook.js@v=600"></script>
+<script type="text/javascript" src="../js/conversation-rollup-600.js"></script>
+<script type="text/javascript" src="../js/privacy-consent-banner.js@v=600"></script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'80d0ab423828185f',t:'MTY5NTc4NTQzNi42MTQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
